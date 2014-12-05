@@ -33,7 +33,7 @@ namespace Vietbait.Lablink.Utilities
                 //var database = LablinkServiceConfig.GetDatabase();
                 //var userId = LablinkServiceConfig.GetUserId();
                 //var password = LablinkServiceConfig.GetPassword();
-
+                ///anh
                 //return string.Format(@"Data Source={0}; Initial Catalog={1}; User ID={2};Password={3}", server, database, userId, password);
 
               
@@ -41,8 +41,6 @@ namespace Vietbait.Lablink.Utilities
                 {
                     
                      string  conn = HongNgocITUtilities.Lis.ConnecttoServerforService();
-                      
-                    
                      return conn;
                 }
                 else
