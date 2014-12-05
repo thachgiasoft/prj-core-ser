@@ -1,0 +1,39 @@
+﻿Installing assembly 'D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe
+   logfile = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.InstallLog
+Installing service Vietbait Lablink Service...
+Service Vietbait Lablink Service has been successfully installed.
+Creating EventLog source Vietbait Lablink Service in log Application...
+Committing assembly 'D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe
+   logfile = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.InstallLog
+Installing assembly 'D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe
+   logfile = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.InstallLog
+Installing service Vietbait Lablink Service...
+Service Vietbait Lablink Service has been successfully installed.
+Creating EventLog source Vietbait Lablink Service in log Application...
+Committing assembly 'D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.exe
+   logfile = D:\PROJECT\_Lablink Ver2 Trunk\debug\Vietbait.Lablink.Service.InstallLog
+Installing assembly 'D:\_PROJECT\_LABLinkVer2\debug\Vietbait.Lablink.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\_PROJECT\_LABLinkVer2\debug\Vietbait.Lablink.Service.InstallLog
+   assemblypath = D:\_PROJECT\_LABLinkVer2\debug\Vietbait.Lablink.Service.exe
+Installing service Vietbait Lablink Service...
+Service Vietbait Lablink Service has been successfully installed.
+Creating EventLog source Vietbait Lablink Service in log Application...
+Committing assembly 'D:\_PROJECT\_LABLinkVer2\debug\Vietbait.Lablink.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\_PROJECT\_LABLinkVer2\debug\Vietbait.Lablink.Service.InstallLog
+   assemblypath = D:\_PROJECT\_LABLinkVer2\debug\Vietbait.Lablink.Service.exe

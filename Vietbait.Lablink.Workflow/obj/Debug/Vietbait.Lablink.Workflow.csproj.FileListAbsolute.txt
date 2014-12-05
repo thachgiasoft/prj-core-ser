@@ -1,0 +1,10 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Workflow.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Workflow.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Workflow\obj\Debug\Vietbait.Lablink.Workflow.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Workflow\obj\Debug\Vietbait.Lablink.Workflow.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Workflow\obj\Debug\Vietbait.Lablink.Workflow.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Workflow.dll
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Workflow.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Workflow\obj\Debug\Vietbait.Lablink.Workflow.csprojResolveAssemblyReference.cache
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Workflow\obj\Debug\Vietbait.Lablink.Workflow.dll
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Workflow\obj\Debug\Vietbait.Lablink.Workflow.pdb

@@ -1,0 +1,10 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Hematology\obj\Debug\Vietbait.Lablink.Devices.Hematology.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Hematology.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Hematology.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Hematology\obj\Debug\Vietbait.Lablink.Devices.Hematology.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Hematology\obj\Debug\Vietbait.Lablink.Devices.Hematology.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Hematology.dll
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Hematology.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Hematology\obj\Debug\Vietbait.Lablink.Devices.Hematology.csprojResolveAssemblyReference.cache
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Hematology\obj\Debug\Vietbait.Lablink.Devices.Hematology.dll
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Hematology\obj\Debug\Vietbait.Lablink.Devices.Hematology.pdb

@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.Lablink.Utilities", "Vietbait.Lablink.Utilities\Vietbait.Lablink.Utilities.csproj", "{8F93C09F-CAEB-44C3-B022-3DD632EECDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.Lablink.List.Business", "Vietbait.Lablink.List.Business\Vietbait.Lablink.List.Business.csproj", "{E98AE44C-EE9F-4AC2-8480-12C10727ACFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.Lablink.List.UI", "Vietbait.Lablink.List.UI\Vietbait.Lablink.List.UI.csproj", "{CAF04B03-F36A-4E2E-BFE2-CA636D27BB5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.TestInformation.UI", "Vietbait.TestInformation.UI\Vietbait.TestInformation.UI.csproj", "{91192084-A21E-49BD-8B7F-D4B9217140CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.TestInformation.Business", "Vietbait.TestInformation.Business\Vietbait.TestInformation.Business.csproj", "{620AE657-6C89-457F-909F-98222CBC7642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.Lablink.Report.UI", "Vietbait.Lablink.Report.UI\Vietbait.Lablink.Report.UI.csproj", "{D9F5D8B9-FA4B-4925-B17E-A38A40519892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.Lablink.Report.Business", "Vietbait.Lablink.Report.Business\Vietbait.Lablink.Report.Business.csproj", "{133D6C93-8865-49AC-A595-6EC08BD81402}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "prjLablink", "Vietbait.Lablink.Core\prjLablink.vbproj", "{697F0076-83E1-458C-8DEA-5DF1C4AAF574}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SysMan_DVC", "Vietbait.Lablink.SystemConfiguration\SysMan_DVC.vbproj", "{E92F8F5C-3288-49AA-A3DF-2E17DE999E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.DemoProject", "Vietbait.DemoProject\Vietbait.DemoProject.csproj", "{E7FE9973-45DE-478E-9BFF-6D22AA588F5E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Vietbait.Lablink.Setup", "Vietbait.Lablink.Setup\Vietbait.Lablink.Setup.vdproj", "{E9F1106D-963A-4EDB-B87B-92623260C863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.Lablink.Interface", "Vietbait.Lablink.Interface\Vietbait.Lablink.Interface.csproj", "{F34906C0-0B7A-4AD6-A61A-488D460437DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vietbait.Lablink.Model", "Vietbait.Lablink.Model\Vietbait.Lablink.Model.csproj", "{23D08939-B244-4250-8C0D-0E711D7337F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F93C09F-CAEB-44C3-B022-3DD632EECDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F93C09F-CAEB-44C3-B022-3DD632EECDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F93C09F-CAEB-44C3-B022-3DD632EECDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98AE44C-EE9F-4AC2-8480-12C10727ACFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98AE44C-EE9F-4AC2-8480-12C10727ACFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98AE44C-EE9F-4AC2-8480-12C10727ACFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF04B03-F36A-4E2E-BFE2-CA636D27BB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF04B03-F36A-4E2E-BFE2-CA636D27BB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF04B03-F36A-4E2E-BFE2-CA636D27BB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91192084-A21E-49BD-8B7F-D4B9217140CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91192084-A21E-49BD-8B7F-D4B9217140CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91192084-A21E-49BD-8B7F-D4B9217140CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{620AE657-6C89-457F-909F-98222CBC7642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{620AE657-6C89-457F-909F-98222CBC7642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{620AE657-6C89-457F-909F-98222CBC7642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F5D8B9-FA4B-4925-B17E-A38A40519892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F5D8B9-FA4B-4925-B17E-A38A40519892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F5D8B9-FA4B-4925-B17E-A38A40519892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133D6C93-8865-49AC-A595-6EC08BD81402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133D6C93-8865-49AC-A595-6EC08BD81402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133D6C93-8865-49AC-A595-6EC08BD81402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697F0076-83E1-458C-8DEA-5DF1C4AAF574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697F0076-83E1-458C-8DEA-5DF1C4AAF574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697F0076-83E1-458C-8DEA-5DF1C4AAF574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E92F8F5C-3288-49AA-A3DF-2E17DE999E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E92F8F5C-3288-49AA-A3DF-2E17DE999E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E92F8F5C-3288-49AA-A3DF-2E17DE999E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7FE9973-45DE-478E-9BFF-6D22AA588F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FE9973-45DE-478E-9BFF-6D22AA588F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FE9973-45DE-478E-9BFF-6D22AA588F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F1106D-963A-4EDB-B87B-92623260C863}.Debug|Any CPU.ActiveCfg = Debug
+		{E9F1106D-963A-4EDB-B87B-92623260C863}.Release|Any CPU.ActiveCfg = Release
+		{F34906C0-0B7A-4AD6-A61A-488D460437DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34906C0-0B7A-4AD6-A61A-488D460437DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34906C0-0B7A-4AD6-A61A-488D460437DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34906C0-0B7A-4AD6-A61A-488D460437DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D08939-B244-4250-8C0D-0E711D7337F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D08939-B244-4250-8C0D-0E711D7337F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D08939-B244-4250-8C0D-0E711D7337F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

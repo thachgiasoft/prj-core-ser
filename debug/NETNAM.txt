@@ -1,0 +1,4 @@
+﻿http://ehospital.vnio.vn:8080/service/CLS/getThongTinBenhNhan/
+cls
+cls     
+http://ehospital.vnio.vn:8080/service/CLS/saveKetQua/

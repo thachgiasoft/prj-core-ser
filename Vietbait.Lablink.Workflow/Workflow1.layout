@@ -1,0 +1,95 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="ASTMWorkflow" Location="30, 30" Size="710, 492" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ReceiveData" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setReceiveData" SourceStateName="Idle" SourceConnectionEdge="Right" TargetActivity="ReceiveData" SourceActivity="Idle" EventHandlerName="GetENQEvent">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="414" Y="141" />
+				<ns0:Point X="489" Y="141" />
+				<ns0:Point X="489" Y="228" />
+				<ns0:Point X="409" Y="228" />
+				<ns0:Point X="409" Y="240" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="CheckFrame" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setCheckFrame" SourceStateName="ReceiveData" SourceConnectionEdge="Left" TargetActivity="CheckFrame" SourceActivity="ReceiveData" EventHandlerName="GetFrameEvent">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="309" Y="310" />
+				<ns0:Point X="300" Y="310" />
+				<ns0:Point X="300" Y="356" />
+				<ns0:Point X="420" Y="356" />
+				<ns0:Point X="420" Y="368" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Idle" SourceConnectionIndex="2" TargetConnectionEdge="Top" SetStateName="setIdle" SourceStateName="ReceiveData" SourceConnectionEdge="Right" TargetActivity="Idle" SourceActivity="ReceiveData" EventHandlerName="GetEOTEvent">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="420" Y="336" />
+				<ns0:Point X="518" Y="336" />
+				<ns0:Point X="518" Y="63" />
+				<ns0:Point X="390" Y="63" />
+				<ns0:Point X="390" Y="71" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ReceiveData" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setBackReceiveData" SourceStateName="CheckFrame" SourceConnectionEdge="Right" TargetActivity="ReceiveData" SourceActivity="CheckFrame" EventHandlerName="GetWrongFrameEvent">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="481" Y="438" />
+				<ns0:Point X="529" Y="438" />
+				<ns0:Point X="529" Y="232" />
+				<ns0:Point X="409" Y="232" />
+				<ns0:Point X="409" Y="240" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ReceiveData" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setReceiveData2" SourceStateName="CheckFrame" SourceConnectionEdge="Right" TargetActivity="ReceiveData" SourceActivity="CheckFrame" EventHandlerName="GetRightFrameEvent">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="472" Y="464" />
+				<ns0:Point X="529" Y="464" />
+				<ns0:Point X="529" Y="232" />
+				<ns0:Point X="409" Y="232" />
+				<ns0:Point X="409" Y="240" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="Idle" Location="296, 71" Size="188, 84" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Size="150, 128" Name="GetENQEvent" Location="304, 130">
+					<EventDrivenDesigner.Designers>
+						<SetStateDesigner Size="130, 44" Name="setReceiveData" Location="314, 195" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<StateInitializationDesigner Size="150, 125" Name="stateInitializationIdle" Location="304, 104">
+					<StateInitializationDesigner.Designers>
+						<CodeDesigner Size="130, 41" Name="codeActivityInit" Location="314, 169" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="ReceiveData" Location="305, 240" Size="208, 110" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 118" Name="stateInitializationReceiveData" Location="313, 273" />
+				<EventDrivenDesigner Size="150, 128" Name="GetFrameEvent" Location="313, 299">
+					<EventDrivenDesigner.Designers>
+						<SetStateDesigner Size="130, 44" Name="setCheckFrame" Location="323, 364" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<EventDrivenDesigner Size="150, 128" Name="GetEOTEvent" Location="313, 325">
+					<EventDrivenDesigner.Designers>
+						<SetStateDesigner Size="130, 44" Name="setIdle" Location="323, 390" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="CheckFrame" Location="316, 368" Size="208, 110" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Size="150, 146" Name="GetWrongFrameEvent" Location="324, 427">
+					<EventDrivenDesigner.Designers>
+						<SetStateDesigner Size="130, 62" Name="setBackReceiveData" Location="334, 492" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<EventDrivenDesigner Size="150, 128" Name="GetRightFrameEvent" Location="324, 453">
+					<EventDrivenDesigner.Designers>
+						<SetStateDesigner Size="130, 44" Name="setReceiveData2" Location="334, 518" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<StateInitializationDesigner Size="150, 118" Name="stateInitializationCheckFrame" Location="324, 401" />
+			</StateDesigner.Designers>
+		</StateDesigner>
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

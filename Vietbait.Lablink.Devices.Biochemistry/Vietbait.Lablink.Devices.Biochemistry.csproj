@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35E42E48-5364-47FB-9841-EA034D398B9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vietbait.Lablink.Devices.Biochemistry</RootNamespace>
+    <AssemblyName>Vietbait.Lablink.Devices.Biochemistry</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <DeepSeaObfuscate>false</DeepSeaObfuscate>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ADVIA1650.cs" />
+    <Compile Include="ADVIA1650\ADVIA1650OrderRecord.cs" />
+    <Compile Include="ADVIA1650\ADVIA1650QueryRecord.cs" />
+    <Compile Include="ADVIA1650\ADVIA1650ResultRecord.cs" />
+    <Compile Include="Au400.cs" />
+    <Compile Include="AU480Manager.cs" />
+    <Compile Include="BioradD10.cs" />
+    <Compile Include="BS300.cs" />
+    <Compile Include="Au400_Bi.cs" />
+    <Compile Include="Avl.cs" />
+    <Compile Include="Au640.cs" />
+    <Compile Include="Ise3000.cs" />
+    <Compile Include="Electrolyte9180.cs" />
+    <Compile Include="ErbaLytePlus.cs" />
+    <Compile Include="Ratech.cs" />
+    <Compile Include="DcAdvantage.cs" />
+    <Compile Include="Hitachi717_NHTD.cs" />
+    <Compile Include="Hitachi917.cs" />
+    <Compile Include="Ilyte_NoiTiet.cs" />
+    <Compile Include="ISENG.cs" />
+    <Compile Include="Hitachi911.cs" />
+    <Compile Include="EXPRESSPLUS.cs" />
+    <Compile Include="GA400.cs" />
+    <Compile Include="Hitachi717.cs" />
+    <Compile Include="ILYTENHTD.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Workflow.Activities">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vietbait.Lablink.Devices\Vietbait.Lablink.Devices.csproj">
+      <Project>{1B3A21B3-BF8F-40DE-93D4-A45AF95BF0F9}</Project>
+      <Name>Vietbait.Lablink.Devices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.TestResult\Vietbait.Lablink.TestResult.csproj">
+      <Project>{6A18ED13-5F88-43F5-AAE5-29129187D6E1}</Project>
+      <Name>Vietbait.Lablink.TestResult</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.Utilities\Vietbait.Lablink.Utilities.csproj">
+      <Project>{8f93c09f-caeb-44c3-b022-3dd632eecdf7}</Project>
+      <Name>Vietbait.Lablink.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.Workflow\Vietbait.Lablink.Workflow.csproj">
+      <Project>{5C7B2451-5240-4314-BD5D-1C432249ECBA}</Project>
+      <Name>Vietbait.Lablink.Workflow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

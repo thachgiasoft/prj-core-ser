@@ -1,0 +1,13 @@
+File Watcher Server:
+Thuộc tính:
+ - PathList:
+ - 
+Phương Thức:
+ - Add đường dẫn để watcher (Add đường dẫn,tên file cần theo dõi,
+ - StartWatcher: Bắt đầu khởi tạo các thread để theo dõi thư mục
+ - StopWatcher: Kết thúc theo dõi thư mục
+Sự kiện:
+ - OnChanged: sự kiện phát sinh khi một file trong thư mục đó bị thay đổi
+ - OnCreated: sự kiện phát sinh khi một file hay thư mục được tạo trong thư mục theo dõi
+ - OnDelete: sự kiện phát sinh khi một file hay thư mục được tạo trong thư mục theo dõi
+ - OnRename: sự kiện phát sinh khi một file hay thư mục trong thư mục theo dõi bị thay đổi tên

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B3A21B3-BF8F-40DE-93D4-A45AF95BF0F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vietbait.Lablink.Devices</RootNamespace>
+    <AssemblyName>Vietbait.Lablink.Devices</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Workflow.Activities">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AstmRecord\AstmCodingRules.cs" />
+    <Compile Include="AstmRecord\AstmBaseRecord.cs" />
+    <Compile Include="AstmRecord\AstmField.cs" />
+    <Compile Include="AstmRecord\CommonAstmTerminationRecord.cs" />
+    <Compile Include="Class\BaseDevice.cs" />
+    <Compile Include="Class\Rs232AstmDeviceLh.cs" />
+    <Compile Include="AstmRecord\IAstmBaseRecord.cs" />
+    <Compile Include="Interfaces\IDeviceRecord.cs" />
+    <Compile Include="Class\FieldOfRecord.cs" />
+    <Compile Include="Class\FileDevice.cs" />
+    <Compile Include="Interfaces\IHeaderRecord.cs" />
+    <Compile Include="Class\OrderRecord.cs" />
+    <Compile Include="Class\PatientRecord.cs" />
+    <Compile Include="Class\QueryRecord.cs" />
+    <Compile Include="Class\ResultRecord.cs" />
+    <Compile Include="Interfaces\ITerminationRecord.cs" />
+    <Compile Include="Interfaces\IBaseDeviceHandlers.cs" />
+    <Compile Include="Interfaces\IBaseDevice.cs" />
+    <Compile Include="Interfaces\ITcpipDevice.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Class\TcpIpDevice.cs" />
+    <Compile Include="Class\Rs232Devcie.cs" />
+    <Compile Include="Class\RS232Base.cs" />
+    <Compile Include="Class\Rs232AstmDevice.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vietbait.Lablink.TestResult\Vietbait.Lablink.TestResult.csproj">
+      <Project>{6A18ED13-5F88-43F5-AAE5-29129187D6E1}</Project>
+      <Name>Vietbait.Lablink.TestResult</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.Utilities\Vietbait.Lablink.Utilities.csproj">
+      <Project>{8F93C09F-CAEB-44C3-B022-3DD632EECDF7}</Project>
+      <Name>Vietbait.Lablink.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

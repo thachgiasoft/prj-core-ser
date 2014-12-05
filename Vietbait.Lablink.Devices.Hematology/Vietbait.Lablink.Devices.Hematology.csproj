@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1963B0E-35D7-44FB-B182-AC1AC35F361A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vietbait.Lablink.Devices.Hematology</RootNamespace>
+    <AssemblyName>Vietbait.Lablink.Devices.Hematology</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AclTop500Manager.cs" />
+    <Compile Include="ACL100.cs" />
+    <Compile Include="ACL200.cs" />
+    <Compile Include="ACL200b.cs" />
+    <Compile Include="ACL300.cs" />
+    <Compile Include="AclTop500\AclTopResultRecord.cs" />
+    <Compile Include="AclTop500\AclTopPatientInformationRecord.cs" />
+    <Compile Include="AclTop500\AclTopTestOrderRecord.cs" />
+    <Compile Include="AclTop500\AclTopTerminationRecord.cs" />
+    <Compile Include="AclTop500\AclTopRequestInformationRecord.cs" />
+    <Compile Include="AclTop500\AclTopHeaderRecord.cs" />
+    <Compile Include="AclTop500\_Test.cs" />
+    <Compile Include="Advia60.cs" />
+    <Compile Include="Advia60_DM.cs" />
+    <Compile Include="BS400.cs" />
+    <Compile Include="Ca500\Ca500HeaderRecord.cs" />
+    <Compile Include="Ca500Manager.cs" />
+    <Compile Include="Ca500\Ca500PatientRecord.cs" />
+    <Compile Include="Ca500\Ca500RequestInformationRecord.cs" />
+    <Compile Include="Ca500\Ca500TestOrderRecord.cs" />
+    <Compile Include="Ca500\Ca500ResultRecord.cs" />
+    <Compile Include="Ca500\Ca500TerminationRecord.cs" />
+    <Compile Include="Ca500\Ca500OrderHeaderRecord.cs" />
+    <Compile Include="CellDyn3200.cs" />
+    <Compile Include="CelldynRubyErba.cs" />
+    <Compile Include="CelltacAlpha_DongAnh.cs" />
+    <Compile Include="CelltaxE.cs" />
+    <Compile Include="CellDyn1700.cs" />
+    <Compile Include="CA500.cs" />
+    <Compile Include="BC5380.cs" />
+    <Compile Include="CA500_VNIO.cs" />
+    <Compile Include="CA1500.cs" />
+    <Compile Include="CellDynRuby.cs" />
+    <Compile Include="CelltaxF.cs" />
+    <Compile Include="CELLTACA_HONGPHUC.cs" />
+    <Compile Include="AclTop500.cs" />
+    <Compile Include="Stago.cs" />
+    <Compile Include="Xt1800.cs" />
+    <Compile Include="XS1000I.cs" />
+    <Compile Include="Kx21.cs" />
+    <Compile Include="Lh750.cs" />
+    <Compile Include="MicrosEs60.cs" />
+    <Compile Include="HM1060.cs" />
+    <Compile Include="Mythic18.cs" />
+    <Compile Include="CELLTACA.cs" />
+    <Compile Include="NihonKoden.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Vietbait.Lablink.Devices, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\Vietbait.Lablink.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Vietbait.Lablink.TestResult, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\Vietbait.Lablink.TestResult.dll</HintPath>
+    </Reference>
+    <Reference Include="Vietbait.Lablink.Workflow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\Vietbait.Lablink.Workflow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vietbait.Lablink.Utilities\Vietbait.Lablink.Utilities.csproj">
+      <Project>{8F93C09F-CAEB-44C3-B022-3DD632EECDF7}</Project>
+      <Name>Vietbait.Lablink.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

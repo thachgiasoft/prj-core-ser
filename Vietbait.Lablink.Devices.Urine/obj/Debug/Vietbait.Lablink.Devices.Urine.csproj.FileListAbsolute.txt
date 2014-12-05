@@ -1,0 +1,15 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.Devices.Urine.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.Devices.Urine.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Urine.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Urine.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Urine.dll
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Urine.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.csprojResolveAssemblyReference.cache
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.dll
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Urine\obj\Debug\Vietbait.Lablink.Devices.Urine.pdb

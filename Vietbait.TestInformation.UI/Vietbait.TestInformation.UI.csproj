@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91192084-A21E-49BD-8B7F-D4B9217140CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vietbait.TestInformation.UI</RootNamespace>
+    <AssemblyName>Vietbait.TestInformation.UI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.3.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <HintPath>..\Library\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="lablinkhelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Mabry.Barcode, Version=1.1.2.0, Culture=neutral, PublicKeyToken=6f0adad0c34a9be1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Mabry.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vietbait.Lablink.List.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\Vietbait.Lablink.List.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="VietBaIT.LABLink.LoadEnvironments, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\VietBaIT.LABLink.LoadEnvironments.dll</HintPath>
+    </Reference>
+    <Reference Include="Vietbait.Lablink.Report.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\debug\Vietbait.Lablink.Report.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Vietbait.Lablink.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a2cf18a4be16132e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\Vietbait.Lablink.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmTestDetailV4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestDetailV4.Designer.cs">
+      <DependentUpon>FrmTestDetailV4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientRegistrationV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientRegistrationV2.Designer.cs">
+      <DependentUpon>FrmPatientRegistrationV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutoUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutoUpdate.Designer.cs">
+      <DependentUpon>FrmAutoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParaEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParaEntry.Designer.cs">
+      <DependentUpon>FrmParaEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientInfo.designer.cs">
+      <DependentUpon>FrmPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientRegistration.Designer.cs">
+      <DependentUpon>FrmPatientRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTestDetailV4_DeletePatientVNIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestDetailV4_DeletePatientVNIO.Designer.cs">
+      <DependentUpon>FrmTestDetailV4_DeletePatientVNIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTestTypeSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestTypeSelection.Designer.cs">
+      <DependentUpon>FrmTestTypeSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ColorConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ColorConfig.Designer.cs">
+      <DependentUpon>frm_ColorConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateNewResultDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateNewResultDetail.Designer.cs">
+      <DependentUpon>frm_CreateNewResultDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateRegList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateRegList.Designer.cs">
+      <DependentUpon>frm_CreateRegList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuickSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuickSearch.Designer.cs">
+      <DependentUpon>frm_QuickSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmTestDetailV4.resx">
+      <DependentUpon>FrmTestDetailV4.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientRegistrationV2.resx">
+      <DependentUpon>FrmPatientRegistrationV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutoUpdate.resx">
+      <DependentUpon>FrmAutoUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParaEntry.resx">
+      <DependentUpon>FrmParaEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientInfo.resx">
+      <DependentUpon>FrmPatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientRegistration.resx">
+      <DependentUpon>FrmPatientRegistration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestDetailV4_DeletePatientVNIO.resx">
+      <DependentUpon>FrmTestDetailV4_DeletePatientVNIO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestTypeSelection.resx">
+      <DependentUpon>FrmTestTypeSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ColorConfig.resx">
+      <DependentUpon>frm_ColorConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateNewResultDetail.resx">
+      <DependentUpon>frm_CreateNewResultDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateRegList.resx">
+      <DependentUpon>frm_CreateRegList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuickSearch.resx">
+      <DependentUpon>frm_QuickSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System_Para\SystemParaBarcode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VietBaIT.CommonLibrary\VietBaIT.CommonLibrary.csproj">
+      <Project>{50f5ac97-89ab-45f1-942d-86a37c3cf203}</Project>
+      <Name>VietBaIT.CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.List.Business\Vietbait.Lablink.List.Business.csproj">
+      <Project>{E98AE44C-EE9F-4AC2-8480-12C10727ACFD}</Project>
+      <Name>Vietbait.Lablink.List.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.Model\Vietbait.Lablink.Model.csproj">
+      <Project>{23d08939-b244-4250-8c0d-0e711d7337f3}</Project>
+      <Name>Vietbait.Lablink.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.TestInformation.Business\Vietbait.TestInformation.Business.csproj">
+      <Project>{620ae657-6c89-457f-909f-98222cbc7642}</Project>
+      <Name>Vietbait.TestInformation.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="System_Para\Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1rightarrow.png" />
+    <Content Include="Resources\add_task.png" />
+    <Content Include="Resources\add_user.png" />
+    <Content Include="Resources\autostart.png" />
+    <Content Include="Resources\filesave.png" />
+    <Content Include="Resources\lock.png" />
+    <Content Include="Resources\lock1.png" />
+    <Content Include="Resources\printer1.png" />
+    <Content Include="Resources\print_printer.png" />
+    <Content Include="Resources\refresh.png" />
+    <Content Include="Resources\refresh1.png" />
+    <Content Include="Resources\save_all.png" />
+    <Content Include="Resources\search.png" />
+    <Content Include="Resources\sl_addentry.png" />
+    <Content Include="Resources\unlock.png" />
+    <Content Include="Resources\unlock1.png" />
+    <Content Include="Resources\viewmag-.png" />
+    <Content Include="Resources\viewmag-.png.bmp" />
+    <Content Include="System_Para\Resources\1rightarrow.png" />
+    <Content Include="System_Para\Resources\add_task.png" />
+    <Content Include="System_Para\Resources\add_user.png" />
+    <Content Include="System_Para\Resources\autostart.png" />
+    <Content Include="System_Para\Resources\filesave.png" />
+    <Content Include="System_Para\Resources\lock.png" />
+    <Content Include="System_Para\Resources\lock1.png" />
+    <Content Include="System_Para\Resources\printer1.png" />
+    <Content Include="System_Para\Resources\print_printer.png" />
+    <Content Include="System_Para\Resources\refresh.png" />
+    <Content Include="System_Para\Resources\refresh1.png" />
+    <Content Include="System_Para\Resources\save_all.png" />
+    <Content Include="System_Para\Resources\sl_addentry.png" />
+    <Content Include="System_Para\Resources\unlock.png" />
+    <Content Include="System_Para\Resources\unlock1.png" />
+    <Content Include="System_Para\Resources\viewmag-.png" />
+    <Content Include="System_Para\Resources\viewmag-.png.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

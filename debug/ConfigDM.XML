@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Config>
+    <SERVERADDRESS>vietbait</SERVERADDRESS>
+    <DATABASE_ID>LAB_THAIHA</DATABASE_ID>
+    <USERNAME>lablink</USERNAME>
+    <PASSWORD>lablink</PASSWORD>
+    <BranchID>THAIHA</BranchID>
+    <LANGUAGEDISPLAY>VN</LANGUAGEDISPLAY>
+    <INTERFACEDISPLAY>MENU</INTERFACEDISPLAY>
+    <LOCALALIAS>DONGMAU</LOCALALIAS>
+  </Config>
+</NewDataSet>

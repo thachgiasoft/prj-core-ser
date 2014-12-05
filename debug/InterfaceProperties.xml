@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InterfaceProperties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BarcodeSize>
+    <Width>600</Width>
+    <Height>300</Height>
+  </BarcodeSize>
+  <BarcodeFontSize>50</BarcodeFontSize>
+  <BarcodeSymbology>Code128</BarcodeSymbology>
+  <BarRatio>2</BarRatio>
+  <CheckSumStyle>Standard</CheckSumStyle>
+  <UseShortBarcode>true</UseShortBarcode>
+  <BarcodeData>0002</BarcodeData>
+  <UseOldPrintMethod>true</UseOldPrintMethod>
+</InterfaceProperties>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23D08939-B244-4250-8C0D-0E711D7337F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vietbait.Lablink.Model</RootNamespace>
+    <AssemblyName>Vietbait.Lablink.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Library\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic, Version=2.1.1.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generated\AllStructs.cs" />
+    <Compile Include="Generated\DDataControl.cs" />
+    <Compile Include="Generated\DDataControlController.cs" />
+    <Compile Include="Generated\DDeviceDatatype.cs" />
+    <Compile Include="Generated\DDeviceDatatypeController.cs" />
+    <Compile Include="Generated\DDeviceList.cs" />
+    <Compile Include="Generated\DDeviceListController.cs" />
+    <Compile Include="Generated\DDevicePort.cs" />
+    <Compile Include="Generated\DDevicePortController.cs" />
+    <Compile Include="Generated\DDeviceTypeList.cs" />
+    <Compile Include="Generated\DDeviceTypeListController.cs" />
+    <Compile Include="Generated\DParList.cs" />
+    <Compile Include="Generated\DParListController.cs" />
+    <Compile Include="Generated\LCreen.cs" />
+    <Compile Include="Generated\LCreenController.cs" />
+    <Compile Include="Generated\LDepartment.cs" />
+    <Compile Include="Generated\LDepartmentController.cs" />
+    <Compile Include="Generated\LDepartmentRoom.cs" />
+    <Compile Include="Generated\LDepartmentRoomController.cs" />
+    <Compile Include="Generated\LManufacture.cs" />
+    <Compile Include="Generated\LManufactureController.cs" />
+    <Compile Include="Generated\LObjectType.cs" />
+    <Compile Include="Generated\LObjectTypeController.cs" />
+    <Compile Include="Generated\LPatientInfo.cs" />
+    <Compile Include="Generated\LPatientInfoController.cs" />
+    <Compile Include="Generated\LPatientInfoDeleted.cs" />
+    <Compile Include="Generated\LPatientInfoDeletedController.cs" />
+    <Compile Include="Generated\LRole.cs" />
+    <Compile Include="Generated\LRoleController.cs" />
+    <Compile Include="Generated\LRoom.cs" />
+    <Compile Include="Generated\LRoomController.cs" />
+    <Compile Include="Generated\LRS232.cs" />
+    <Compile Include="Generated\LRS232Controller.cs" />
+    <Compile Include="Generated\LStandardTest.cs" />
+    <Compile Include="Generated\LStandardTestController.cs" />
+    <Compile Include="Generated\LTcpip.cs" />
+    <Compile Include="Generated\LTcpipController.cs" />
+    <Compile Include="Generated\LTestStatus.cs" />
+    <Compile Include="Generated\LTestStatusController.cs" />
+    <Compile Include="Generated\LUser.cs" />
+    <Compile Include="Generated\LUserController.cs" />
+    <Compile Include="Generated\StoredProcedures.cs" />
+    <Compile Include="Generated\SysPrintColor.cs" />
+    <Compile Include="Generated\SysPrintColorController.cs" />
+    <Compile Include="Generated\SysPrintColorDetail.cs" />
+    <Compile Include="Generated\SysPrintColorDetailController.cs" />
+    <Compile Include="Generated\TblAdministrator.cs" />
+    <Compile Include="Generated\TblAdministratorController.cs" />
+    <Compile Include="Generated\TblAliasMapping.cs" />
+    <Compile Include="Generated\TblAliasMappingController.cs" />
+    <Compile Include="Generated\TblFunction.cs" />
+    <Compile Include="Generated\TblFunctionController.cs" />
+    <Compile Include="Generated\TblHisLisPatientInfoVnio.cs" />
+    <Compile Include="Generated\TblHisLisPatientInfoVnioController.cs" />
+    <Compile Include="Generated\TblImgAndIcon.cs" />
+    <Compile Include="Generated\TblImgAndIconController.cs" />
+    <Compile Include="Generated\TblManagementUnit.cs" />
+    <Compile Include="Generated\TblManagementUnitController.cs" />
+    <Compile Include="Generated\TblMultiLanguage.cs" />
+    <Compile Include="Generated\TblMultiLanguageController.cs" />
+    <Compile Include="Generated\TblParamMapping.cs" />
+    <Compile Include="Generated\TblParamMappingController.cs" />
+    <Compile Include="Generated\TblPayment.cs" />
+    <Compile Include="Generated\TblPaymentController.cs" />
+    <Compile Include="Generated\TblPaymentDetail.cs" />
+    <Compile Include="Generated\TblPaymentDetailController.cs" />
+    <Compile Include="Generated\TblReason.cs" />
+    <Compile Include="Generated\TblReasonController.cs" />
+    <Compile Include="Generated\TblRegService.cs" />
+    <Compile Include="Generated\TblRegServiceController.cs" />
+    <Compile Include="Generated\TblRegServiceDetail.cs" />
+    <Compile Include="Generated\TblRegServiceDetailController.cs" />
+    <Compile Include="Generated\TblRole.cs" />
+    <Compile Include="Generated\TblRoleController.cs" />
+    <Compile Include="Generated\TblRolesForUser.cs" />
+    <Compile Include="Generated\TblRolesForUserController.cs" />
+    <Compile Include="Generated\TblSecurity.cs" />
+    <Compile Include="Generated\TblSecurityController.cs" />
+    <Compile Include="Generated\TblServiceType.cs" />
+    <Compile Include="Generated\TblServiceTypeController.cs" />
+    <Compile Include="Generated\TblSystemParameter.cs" />
+    <Compile Include="Generated\TblSystemParameterController.cs" />
+    <Compile Include="Generated\TblTestService.cs" />
+    <Compile Include="Generated\TblTestServiceController.cs" />
+    <Compile Include="Generated\TblTestTypeMapping.cs" />
+    <Compile Include="Generated\TblTestTypeMappingController.cs" />
+    <Compile Include="Generated\TblToolbarButton.cs" />
+    <Compile Include="Generated\TblToolbarButtonController.cs" />
+    <Compile Include="Generated\TblTrinhky.cs" />
+    <Compile Include="Generated\TblTrinhkyController.cs" />
+    <Compile Include="Generated\TblUser.cs" />
+    <Compile Include="Generated\TblUserController.cs" />
+    <Compile Include="Generated\TblVersion.cs" />
+    <Compile Include="Generated\TblVersionController.cs" />
+    <Compile Include="Generated\TblYeucauXetnghiemVnio.cs" />
+    <Compile Include="Generated\TblYeucauXetnghiemVnioController.cs" />
+    <Compile Include="Generated\TCommonPara.cs" />
+    <Compile Include="Generated\TCommonParaController.cs" />
+    <Compile Include="Generated\TDataRaw.cs" />
+    <Compile Include="Generated\TDataRawController.cs" />
+    <Compile Include="Generated\TDataType.cs" />
+    <Compile Include="Generated\TDataTypeController.cs" />
+    <Compile Include="Generated\TEvolisDetail.cs" />
+    <Compile Include="Generated\TEvolisDetailController.cs" />
+    <Compile Include="Generated\TEvolisRerun.cs" />
+    <Compile Include="Generated\TEvolisRerunController.cs" />
+    <Compile Include="Generated\TEvolisResult.cs" />
+    <Compile Include="Generated\TEvolisResultController.cs" />
+    <Compile Include="Generated\TParaList.cs" />
+    <Compile Include="Generated\TParaListController.cs" />
+    <Compile Include="Generated\TRegList.cs" />
+    <Compile Include="Generated\TRegListController.cs" />
+    <Compile Include="Generated\TResultDetail.cs" />
+    <Compile Include="Generated\TResultDetailController.cs" />
+    <Compile Include="Generated\TResultDetailDeleted.cs" />
+    <Compile Include="Generated\TResultDetailDeletedController.cs" />
+    <Compile Include="Generated\TTestContent.cs" />
+    <Compile Include="Generated\TTestContentController.cs" />
+    <Compile Include="Generated\TTestgroupDtl.cs" />
+    <Compile Include="Generated\TTestgroupDtlController.cs" />
+    <Compile Include="Generated\TTestgroupList.cs" />
+    <Compile Include="Generated\TTestgroupListController.cs" />
+    <Compile Include="Generated\TTestInfo.cs" />
+    <Compile Include="Generated\TTestInfoController.cs" />
+    <Compile Include="Generated\TTestInfoDeleted.cs" />
+    <Compile Include="Generated\TTestInfoDeletedController.cs" />
+    <Compile Include="Generated\TTestReason.cs" />
+    <Compile Include="Generated\TTestReasonController.cs" />
+    <Compile Include="Generated\TTestTypeList.cs" />
+    <Compile Include="Generated\TTestTypeListController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

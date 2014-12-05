@@ -1,0 +1,15 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.Devices.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.Devices.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.dll
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.csprojResolveAssemblyReference.cache
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.dll
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices\obj\Debug\Vietbait.Lablink.Devices.pdb

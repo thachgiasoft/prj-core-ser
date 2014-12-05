@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E993446B-28B7-401B-BCDC-D51B49136B92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vietbait.Lablink.Devices.Immunology</RootNamespace>
+    <AssemblyName>Vietbait.Lablink.Devices.Immunology</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DeepSeaObfuscate>false</DeepSeaObfuscate>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.Activities">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Access2\Access2HeaderRecord.cs" />
+    <Compile Include="Access2\Access2PatientInformationRecord.cs" />
+    <Compile Include="Access2\Access2RequestInformationRecord.cs" />
+    <Compile Include="Access2\Access2ResultRecord.cs" />
+    <Compile Include="Access2\Access2TerminationRecord.cs" />
+    <Compile Include="Access2\Access2TestOrderRecord.cs" />
+    <Compile Include="Access2\_Access2Test.cs" />
+    <Compile Include="CentaurDevice\CentaurHeaderRecord.cs" />
+    <Compile Include="CentaurDevice\CentaurOrderRecord.cs" />
+    <Compile Include="CentaurDevice\CentaurPatientRecord.cs" />
+    <Compile Include="CentaurDevice\CentaurQueryRecord.cs" />
+    <Compile Include="CentaurDevice\CentaurResultRecord.cs" />
+    <Compile Include="CentaurDevice\CentaurTerminationRecord.cs" />
+    <Compile Include="CentaurManager.cs" />
+    <Compile Include="CI4100.cs" />
+    <Compile Include="Cobase411.cs" />
+    <Compile Include="Cobase6000.cs" />
+    <Compile Include="CobasE6000\CobasE6000HeaderRecord.cs" />
+    <Compile Include="CobasE6000\CobasE6000ResultRecord.cs" />
+    <Compile Include="CobasE6000\CobasE6000RequestInformationRecord.cs" />
+    <Compile Include="CobasE6000\_CobasE6000Test.cs" />
+    <Compile Include="CobasE6000\CobasE6000TerminationRecord.cs" />
+    <Compile Include="CobasE6000\CobasE6000PatientInformationRecord.cs" />
+    <Compile Include="CobasE6000\CobasE6000TestOrderRecord.cs" />
+    <Compile Include="Cobase6000BiManager.cs" />
+    <Compile Include="CobasE411\CobasE411HeaderRecord.cs" />
+    <Compile Include="CobasE411\CobasE411PatientInformationRecord.cs" />
+    <Compile Include="CobasE411\CobasE411RequestInformationRecord.cs" />
+    <Compile Include="CobasE411\CobasE411ResultRecord.cs" />
+    <Compile Include="CobasE411\CobasE411TerminationRecord.cs" />
+    <Compile Include="CobasE411\CobasE411TestOrderRecord.cs" />
+    <Compile Include="CobasE411\_CobasE411Test.cs" />
+    <Compile Include="Cobase411_Bi.cs" />
+    <Compile Include="CI4100Manager.cs" />
+    <Compile Include="CI4100\CI4100HeaderRecord.cs" />
+    <Compile Include="CI4100\CI4100PatientInformationRecord.cs" />
+    <Compile Include="CI4100\CI4100RequestInformationRecord.cs" />
+    <Compile Include="CI4100\CI4100ResultRecord.cs" />
+    <Compile Include="CI4100\CI4100TerminationRecord.cs" />
+    <Compile Include="CI4100\CI4100TestOrderRecord.cs" />
+    <Compile Include="Cobase411Manager.cs" />
+    <Compile Include="Axsym.cs" />
+    <Compile Include="DxI800.cs" />
+    <Compile Include="Immulyte2000.cs" />
+    <Compile Include="VersaCellNew.cs" />
+    <Compile Include="VersaCellDevice\VersaCellHeaderRecord.cs" />
+    <Compile Include="VersaCellDevice\VersaCellOrderRecord.cs" />
+    <Compile Include="VersaCellDevice\VersaCellPatientRecord.cs" />
+    <Compile Include="VersaCellDevice\VersaCellQueryRecord.cs" />
+    <Compile Include="VersaCellDevice\VersaCellResultRecord.cs" />
+    <Compile Include="VersaCellDevice\VersaCellTerminationRecord.cs" />
+    <Compile Include="Centaur.cs" />
+    <Compile Include="Elecsys2010.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vietbait.Lablink.Devices\Vietbait.Lablink.Devices.csproj">
+      <Project>{1B3A21B3-BF8F-40DE-93D4-A45AF95BF0F9}</Project>
+      <Name>Vietbait.Lablink.Devices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.Model\Vietbait.Lablink.Model.csproj">
+      <Project>{23d08939-b244-4250-8c0d-0e711d7337f3}</Project>
+      <Name>Vietbait.Lablink.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.TestResult\Vietbait.Lablink.TestResult.csproj">
+      <Project>{6A18ED13-5F88-43F5-AAE5-29129187D6E1}</Project>
+      <Name>Vietbait.Lablink.TestResult</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.Utilities\Vietbait.Lablink.Utilities.csproj">
+      <Project>{8F93C09F-CAEB-44C3-B022-3DD632EECDF7}</Project>
+      <Name>Vietbait.Lablink.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vietbait.Lablink.Workflow\Vietbait.Lablink.Workflow.csproj">
+      <Project>{5C7B2451-5240-4314-BD5D-1C432249ECBA}</Project>
+      <Name>Vietbait.Lablink.Workflow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

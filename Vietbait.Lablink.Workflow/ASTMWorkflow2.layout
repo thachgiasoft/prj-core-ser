@@ -1,0 +1,104 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="ASTMWorkflow2" Location="30, 30" Size="715, 492" AutoSize="False" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Idle" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setIdleState" SourceStateName="ASTMWorkflow2InitialState" SourceConnectionEdge="Right" TargetActivity="Idle" SourceActivity="ASTMWorkflow2InitialState" EventHandlerName="WorkflowInit">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="403" Y="132" />
+				<ns0:Point X="483" Y="132" />
+				<ns0:Point X="483" Y="188" />
+				<ns0:Point X="387" Y="188" />
+				<ns0:Point X="387" Y="200" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ReceiveData" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setReceiveData" SourceStateName="Idle" SourceConnectionEdge="Right" TargetActivity="ReceiveData" SourceActivity="Idle" EventHandlerName="GetENQ">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="381" Y="270" />
+				<ns0:Point X="486" Y="270" />
+				<ns0:Point X="486" Y="321" />
+				<ns0:Point X="390" Y="321" />
+				<ns0:Point X="390" Y="333" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ReceiveData" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setStayReceiveData" SourceStateName="ReceiveData" SourceConnectionEdge="Right" TargetActivity="ReceiveData" SourceActivity="ReceiveData" EventHandlerName="GetRightFrame">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="422" Y="178" />
+				<ns0:Point X="494" Y="178" />
+				<ns0:Point X="494" Y="100" />
+				<ns0:Point X="390" Y="100" />
+				<ns0:Point X="390" Y="108" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ReceiveData" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStayReceiveData2" SourceStateName="ReceiveData" SourceConnectionEdge="Right" TargetActivity="ReceiveData" SourceActivity="ReceiveData" EventHandlerName="GetWrongFrame">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="431" Y="204" />
+				<ns0:Point X="494" Y="204" />
+				<ns0:Point X="494" Y="100" />
+				<ns0:Point X="390" Y="100" />
+				<ns0:Point X="390" Y="108" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Idle" SourceConnectionIndex="2" TargetConnectionEdge="Top" SetStateName="setIdle" SourceStateName="ReceiveData" SourceConnectionEdge="Right" TargetActivity="Idle" SourceActivity="ReceiveData" EventHandlerName="GetEOT">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="382" Y="455" />
+				<ns0:Point X="382" Y="496" />
+				<ns0:Point X="194" Y="496" />
+				<ns0:Point X="194" Y="192" />
+				<ns0:Point X="387" Y="192" />
+				<ns0:Point X="387" Y="200" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="ASTMWorkflow2InitialState" Location="289, 88" Size="188, 80" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 191" Name="WorkflowInit" Location="297, 121">
+					<StateInitializationDesigner.Designers>
+						<CodeDesigner Size="130, 44" Name="InitWorkflowActivity" Location="307, 186" />
+						<SetStateDesigner Size="130, 44" Name="setIdleState" Location="307, 249" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Idle" Location="293, 200" Size="188, 110" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Size="150, 188" Name="GetENQ" Location="301, 259">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="HandleGetENQ" Location="311, 324" />
+						<SetStateDesigner Size="130, 44" Name="setReceiveData" Location="311, 384" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<StateInitializationDesigner Size="150, 125" Name="InitializationIdle" Location="301, 233">
+					<StateInitializationDesigner.Designers>
+						<CodeDesigner Size="130, 41" Name="InitIdleActivity" Location="311, 298" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="ReceiveData" Location="296, 333" Size="188, 136" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Size="150, 209" Name="GetRightFrame" Location="304, 167">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 44" Name="HandleGetRightFrame" Location="314, 232" />
+						<SetStateDesigner Size="130, 62" Name="setStayReceiveData" Location="314, 295" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<EventDrivenDesigner Size="150, 209" Name="GetWrongFrame" Location="304, 193">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 44" Name="HandleGetWrongFrame" Location="314, 258" />
+						<SetStateDesigner Size="130, 62" Name="setStayReceiveData2" Location="314, 321" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<EventDrivenDesigner Size="150, 188" Name="GetEOT" Location="312, 154">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="HandleGetEOT" Location="322, 219" />
+						<SetStateDesigner Size="130, 44" Name="setInitWorkflow" Location="322, 279" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<StateInitializationDesigner Size="150, 128" Name="InitializationReceiveData" Location="304, 141">
+					<StateInitializationDesigner.Designers>
+						<CodeDesigner Size="130, 44" Name="InitReceiveDataActivity" Location="314, 206" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

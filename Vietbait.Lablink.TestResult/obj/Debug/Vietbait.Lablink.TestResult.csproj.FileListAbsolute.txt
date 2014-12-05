@@ -1,0 +1,12 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.TestResult.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.TestResult.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.TestResult\obj\Debug\Vietbait.Lablink.TestResult.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.TestResult\obj\Debug\Vietbait.Lablink.TestResult.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.TestResult.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.TestResult.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.TestResult\obj\Debug\Vietbait.Lablink.TestResult.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.TestResult\obj\Debug\Vietbait.Lablink.TestResult.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.TestResult.dll
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.TestResult.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.TestResult\obj\Debug\Vietbait.Lablink.TestResult.dll
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.TestResult\obj\Debug\Vietbait.Lablink.TestResult.pdb

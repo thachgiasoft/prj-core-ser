@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!--Log Viewer XML configuration settings.-->
+<Config>
+  <Schema>1</Schema>
+  <UI>
+    <ColorOddRows>-2894893</ColorOddRows>
+    <ColorEvenRows>-1</ColorEvenRows>
+    <LineNumbers>0</LineNumbers>
+    <TooltipPopups>0</TooltipPopups>
+    <OpenLastFile>0</OpenLastFile>
+    <FileMonitoringEnabled>0</FileMonitoringEnabled>
+    <MoveToLastLineEnabled>0</MoveToLastLineEnabled>
+    <LastOpenDir>D:\_Error Report\NoiTiet\20130318\LOG</LastOpenDir>
+    <DefaultDateFormat>yyyy-MM-dd HH:mm:ss.ffff</DefaultDateFormat>
+    <MRUList>
+      <Value>D:\_Error Report\NoiTiet\20130318\LOG\CobasE411.log</Value>
+    </MRUList>
+    <OpenFiles />
+    <FiltersMRUList />
+    <Highlights2>
+      <Highlight>
+        <Color>#FFFFFF80</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FF80FF80</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FF80FFFF</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FF8080FF</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FFFF8080</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FFFFFF00</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FF00FF00</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FF0080FF</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FF800080</Color>
+        <Text />
+      </Highlight>
+      <Highlight>
+        <Color>#FFFF0000</Color>
+        <Text />
+      </Highlight>
+    </Highlights2>
+    <SeverityFilters>
+      <SeverityFilter>
+        <Type>0</Type>
+        <Enabled>1</Enabled>
+        <Text>FATAL</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>1</Type>
+        <Enabled>0</Enabled>
+        <Text>FATAL2</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>2</Type>
+        <Enabled>1</Enabled>
+        <Text>ERROR</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>3</Type>
+        <Enabled>0</Enabled>
+        <Text>ERROR2</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>4</Type>
+        <Enabled>1</Enabled>
+        <Text>WARNING</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>5</Type>
+        <Enabled>0</Enabled>
+        <Text>WARNING2</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>6</Type>
+        <Enabled>1</Enabled>
+        <Text>INFO</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>7</Type>
+        <Enabled>0</Enabled>
+        <Text>INFO2</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>8</Type>
+        <Enabled>1</Enabled>
+        <Text>DEBUG</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>9</Type>
+        <Enabled>0</Enabled>
+        <Text>DEBUG2</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>10</Type>
+        <Enabled>1</Enabled>
+        <Text>TRACE</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>11</Type>
+        <Enabled>0</Enabled>
+        <Text>TRACE2</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>12</Type>
+        <Enabled>0</Enabled>
+        <Text />
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>13</Type>
+        <Enabled>0</Enabled>
+        <Text>UNKNOWN</Text>
+      </SeverityFilter>
+      <SeverityFilter>
+        <Type>14</Type>
+        <Enabled>0</Enabled>
+        <Text>UNKNOWN2</Text>
+      </SeverityFilter>
+    </SeverityFilters>
+  </UI>
+  <DefaultConfig />
+  <LogFileConfigList>
+    <LogFileConfig>
+      <ConfigurationName>&lt;Blank&gt;</ConfigurationName>
+      <ConfigurationId>1</ConfigurationId>
+      <DateFormat>yyyy-MM-dd HH:mm:ss.ffff</DateFormat>
+      <ColumnConfigType>0</ColumnConfigType>
+      <ColumnLoggerConfigString />
+      <ConfigColumn>
+        <Separators />
+        <Separator>0</Separator>
+        <SpaceSeparator>0</SpaceSeparator>
+        <DisplayName />
+        <Visible>1</Visible>
+        <ColumnType>0</ColumnType>
+        <ColumnWidth>-1</ColumnWidth>
+        <ColumnDisplayOrder>-1</ColumnDisplayOrder>
+        <ColumnLoggerColumnTypeName />
+        <ColumnLoggerColumnType>0</ColumnLoggerColumnType>
+        <ColumnLoggerSeparatorsLeadingModified>0</ColumnLoggerSeparatorsLeadingModified>
+        <ColumnLoggerSeparatorLeadingString />
+        <ColumnLoggerSeparatorsTrailingModified>0</ColumnLoggerSeparatorsTrailingModified>
+        <ColumnLoggerSeparatorTrailingString />
+        <ColumnLoggerFormat />
+        <ColumnLoggerMinLength>-1</ColumnLoggerMinLength>
+        <ColumnLoggerMaxLength>-1</ColumnLoggerMaxLength>
+        <ConfigColumns />
+      </ConfigColumn>
+    </LogFileConfig>
+  </LogFileConfigList>
+  <FilterSetList />
+</Config>

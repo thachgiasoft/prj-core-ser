@@ -1,0 +1,14 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm - Copy\Vietbait.Config\obj\Debug\Vietbait.Config.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm - Copy\Vietbait.Config\obj\Debug\Vietbait.Config.Properties.Resources.resources
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm - Copy\Vietbait.Config\obj\Debug\Vietbait.Config.csproj.GenerateResource.Cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm - Copy\debug\Vietbait.Config.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm - Copy\debug\Vietbait.Config.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm - Copy\Vietbait.Config\obj\Debug\Vietbait.Config.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm - Copy\Vietbait.Config\obj\Debug\Vietbait.Config.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Config.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Config.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Config\obj\Debug\Vietbait.Config.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Config\obj\Debug\Vietbait.Config.Properties.Resources.resources
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Config\obj\Debug\Vietbait.Config.csproj.GenerateResource.Cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Config\obj\Debug\Vietbait.Config.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Config\obj\Debug\Vietbait.Config.pdb

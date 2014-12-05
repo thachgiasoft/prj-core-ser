@@ -1,0 +1,2189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3FC2BEC-4D55-4EBA-A4C0-6638EBB1DF84}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>prjBussiness</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>prjBussiness</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\library\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="clsRegistry, Version=1.0.2258.27362, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\library\clsRegistry.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="lablinkhelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\debug\lablinkhelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Mabry.Barcode, Version=1.1.2.0, Culture=neutral, PublicKeyToken=6f0adad0c34a9be1">
+      <HintPath>..\Lablink Bin1\Mabry.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Multilanguage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\library\Multilanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsAddColumn.vb" />
+    <Compile Include="Classes\clsControls.vb" />
+    <Compile Include="Classes\clsPatient.vb" />
+    <Compile Include="Classes\clsGridStyle.vb" />
+    <Compile Include="Classes\clsList.vb" />
+    <Compile Include="Classes\clsSQLDataExecute.vb" />
+    <Compile Include="Classes\clsTrapBoolColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\cls_List.vb" />
+    <Compile Include="Classes\cls_SignInfor.vb" />
+    <Compile Include="Classes\HCDataGridKeyTrapTextBoxColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\HCKeyTrapTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\dsTestResult.vb">
+      <DependentUpon>dsTestResult.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsTestResultPrintV2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTestResultPrintV2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsTestResultPrintV2.vb">
+      <DependentUpon>dsTestResultPrintV2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_dailyDetailTestReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_dailyDetailTestReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsPatient.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPatient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsPrintBarcode.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintBarcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsTestResult.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTestResult.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsTestResultPrint.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTestResultPrint.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_DailyTestReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_DailyTestReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_DailyTestReport.vb">
+      <DependentUpon>ds_DailyTestReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_DepartmentTestReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_DepartmentTestReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_JCLV.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_JCLV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_NB.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_NB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_QLPK.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_QLPK.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_ServiceList.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_ServiceList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_ServiceList.vb">
+      <DependentUpon>ds_ServiceList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPatient_InfoV1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_ParamTestReport_VNIO.Designer.vb">
+      <DependentUpon>Frm_ParamTestReport_VNIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_ParamTestReport_VNIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_InBarcodeV2.Designer.vb">
+      <DependentUpon>frm_InBarcodeV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_InBarcodeV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoadExcel.Designer.vb">
+      <DependentUpon>frmLoadExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoadExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPatient_Info_LaoKhoa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_QuickInput.Designer.vb">
+      <DependentUpon>frm_QuickInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_QuickInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmParaTestReportV2.Designer.vb">
+      <DependentUpon>frmParaTestReportV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmParaTestReportV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPatient_Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchLam.Designer.vb">
+      <DependentUpon>frmSearchLam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearchLam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_BackupDevices.Designer.vb">
+      <DependentUpon>frm_BackupDevices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_BackupDevices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_EnterLam.Designer.vb">
+      <DependentUpon>frm_EnterLam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_EnterLam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Export_Import_Devices.Designer.vb">
+      <DependentUpon>frm_Export_Import_Devices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Export_Import_Devices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_InBarcode.Designer.vb">
+      <DependentUpon>frm_InBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_InBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_LamInfo.Designer.vb">
+      <DependentUpon>frm_LamInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_LamInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ObjectType.designer.vb">
+      <DependentUpon>frm_ObjectType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ObjectType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ChooseTestDate.designer.vb">
+      <DependentUpon>frm_ChooseTestDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ChooseTestDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_SeachPatient_Result.Designer.vb">
+      <DependentUpon>frm_SeachPatient_Result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_SeachPatient_Result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestInforV2_LaoKhoa.Designer.vb">
+      <DependentUpon>frm_TestInforV2_LaoKhoa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestInforV2_LaoKhoa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateTestForPatient.Designer.vb">
+      <DependentUpon>frm_UpdateTestForPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateTestForPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_BackupData.Designer.vb">
+      <DependentUpon>frm_BackupData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_BackupData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Communication.Designer.vb">
+      <DependentUpon>frm_Communication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Communication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_ParamTestReport.Designer.vb">
+      <DependentUpon>Frm_ParamTestReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_ParamTestReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Preview.Designer.vb">
+      <DependentUpon>frm_Preview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Preview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_SignInfor.designer.vb">
+      <DependentUpon>frm_SignInfor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_SignInfor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_CacheCrystalReport.Designer.vb">
+      <DependentUpon>frm_CacheCrystalReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_CacheCrystalReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_DepartmentTestReport.Designer.vb">
+      <DependentUpon>frm_DepartmentTestReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_DepartmentTestReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Department.designer.vb">
+      <DependentUpon>frm_Department.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Department.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Department_Room.Designer.vb">
+      <DependentUpon>frm_Department_Room.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Department_Room.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_PatientTestDetailList.designer.vb">
+      <DependentUpon>frm_PatientTestDetailList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_PatientTestDetailList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_DailyTestReport.Designer.vb">
+      <DependentUpon>frm_DailyTestReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_DailyTestReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Doctor_List.Designer.vb">
+      <DependentUpon>frm_Doctor_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Doctor_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTest_detail.Designer.vb">
+      <DependentUpon>frmTest_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTest_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPatientList.designer.vb">
+      <DependentUpon>frmPatientList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPatientList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_GroupType.Designer.vb">
+      <DependentUpon>frm_GroupType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_GroupType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_RoleList.designer.vb">
+      <DependentUpon>frm_RoleList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_RoleList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_PatientList.Designer.vb">
+      <DependentUpon>frm_PatientList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_PatientList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_RoomList.Designer.vb">
+      <DependentUpon>frm_RoomList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_RoomList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_SearchOnGrid.Designer.vb">
+      <DependentUpon>frm_SearchOnGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_SearchOnGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestDetailV2.Designer.vb">
+      <DependentUpon>frm_TestDetailV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestDetailV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestInfo.Designer.vb">
+      <DependentUpon>frm_TestInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestInforV2.Designer.vb">
+      <DependentUpon>frm_TestInforV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestInforV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestList.Designer.vb">
+      <DependentUpon>frm_TestList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestParamList.Designer.vb">
+      <DependentUpon>frm_TestParamList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestParamList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestTypeList.Designer.vb">
+      <DependentUpon>frm_TestTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestTypeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReportMain.Designer.vb">
+      <DependentUpon>FrmReportMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmReportMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestGroupList.Designer.vb">
+      <DependentUpon>frm_TestGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestGroupList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TestTypesPrint.Designer.vb">
+      <DependentUpon>frm_TestTypesPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TestTypesPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateTestDetail.Designer.vb">
+      <DependentUpon>frm_UpdateTestDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateTestDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBarcodePrinter.Designer.vb">
+      <DependentUpon>frmBarcodePrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBarcodePrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VNIO_frmBatchInput.Designer.vb">
+      <DependentUpon>VNIO_frmBatchInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VNIO_frmBatchInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VNIO_frm_TestParamList.Designer.vb">
+      <DependentUpon>VNIO_frm_TestParamList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VNIO_frm_TestParamList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_InBarcodeHangLoat.designer.vb">
+      <DependentUpon>frm_InBarcodeHangLoat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_InBarcodeHangLoat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="globalMod.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MoneyByLetterMod.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LAOKHOA\LAOKHOA_crpt_DetailTestReport_ALL1.vb">
+      <DependentUpon>LAOKHOA_crpt_DetailTestReport_ALL1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\LAOKHOA\LAOKHOA_crpt_DailyParamTestReport.vb">
+      <DependentUpon>LAOKHOA_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\LAOKHOA\LAOKHOA_crpt_DailyParamTestReport1.vb">
+      <DependentUpon>LAOKHOA_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\LAOKHOA\LAOKHOA_crpt_DailyParamTestReport2.vb">
+      <DependentUpon>LAOKHOA_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\LAOKHOA\LAOKHOA_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>LAOKHOA_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\LAOKHOA\LAOKHOA_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>LAOKHOA_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\NIITD\NHTD_crtp_PrintNoBarcode.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NHTD_crtp_PrintNoBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DetailTestReport_ALLV2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NIITD_crpt_DetailTestReport_ALLV2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NHTDHH_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>NHTDHH_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DailyParamTestReport.vb">
+      <DependentUpon>Vabiotech_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DailyParamTestReport1.vb">
+      <DependentUpon>Vabiotech_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DailyParamTestReport2.vb">
+      <DependentUpon>Vabiotech_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>Vabiotech_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_ALL_Sub.vb">
+      <DependentUpon>Vabiotech_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>Vabiotech_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <DependentUpon>Vabiotech_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE_2.vb">
+      <DependentUpon>Vabiotech_crpt_DetailTestReport_TESTTYPE_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <DependentUpon>Vabiotech_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\new_VD_1C_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>new_VD_1C_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\VD_1C\new_VD_1C_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>new_VD_1C_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DailyParamTestReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DailyParamTestReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DailyParamTestReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_ALL2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_ALL_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE_2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DetailTestReport_TESTTYPE_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_1C_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DetailTestReport_ALL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A5_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DetailTestReport_ALL_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A5_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DetailTestReport_TESTTYPE.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A5_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A5_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A5_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DailyParamTestReport.vb">
+      <DependentUpon>A5_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DailyParamTestReport1.vb">
+      <DependentUpon>A5_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\A5\A5_crpt_DailyParamTestReport2.vb">
+      <DependentUpon>A5_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DailyParamTestReport.vb">
+      <DependentUpon>HP_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DailyParamTestReport1.vb">
+      <DependentUpon>HP_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DailyParamTestReport2.vb">
+      <DependentUpon>HP_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\HongNgoc\HongNgoc_crpt_DailyParamTestReport.vb">
+      <DependentUpon>HongNgoc_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\HongNgoc\HongNgoc_crpt_DailyParamTestReport1.vb">
+      <DependentUpon>HongNgoc_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\HongNgoc\HongNgoc_crpt_DailyParamTestReport2.vb">
+      <DependentUpon>HongNgoc_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\HongNgoc\HongNgoc_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>HongNgoc_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\HongNgoc\HongNgoc_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>HongNgoc_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DailyParamTestReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DailyParamTestReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DailyParamTestReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALLFromDateToDate.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_ALLFromDateToDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALLFromDateToDateAllPatient.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_ALLFromDateToDateAllPatient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALL_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPE.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPEFromDateToDate.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_TESTTYPEFromDateToDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_PrintInvoice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_PrintInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_crpt_PrintInvoice_ALL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_crpt_PrintInvoice_ALL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\JCLV\JCLV_DailyTestReportDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCLV_DailyTestReportDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>NIITD_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DailyParamTestReport.vb">
+      <DependentUpon>NIITD_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>NIITD_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DetailTestReport_ALL_Sub.vb">
+      <DependentUpon>NIITD_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE_2.vb">
+      <DependentUpon>NIITD_crpt_DetailTestReport_TESTTYPE_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <DependentUpon>NIITD_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <DependentUpon>NIITD_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DailyParamTestReport11.vb">
+      <DependentUpon>NIITD_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\NIITD\NIITD_crpt_DailyParamTestReport21.vb">
+      <DependentUpon>NIITD_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\US1000\US1000_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>US1000_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_GeneralDetailTestReport_ALL.vb">
+      <DependentUpon>crpt_GeneralDetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\VienTimHN\VienTimHN_crpt_DailyParamTestReport.vb">
+      <DependentUpon>VienTimHN_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VienTimHN\VienTimHN_crpt_DailyParamTestReport1.vb">
+      <DependentUpon>VienTimHN_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VienTimHN\VienTimHN_crpt_DailyParamTestReport2.vb">
+      <DependentUpon>VienTimHN_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VienTimHN\VienTimHN_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>VienTimHN_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VienTimHN\VienTimHN_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>VienTimHN_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VietDuc\VD_crpt_DailyParamTestReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VietDuc\VD_crpt_DailyParamTestReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VietDuc\VD_crpt_DailyParamTestReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DailyParamTestReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DailyParamTestReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DailyParamTestReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DepartmentTestReport1.vb">
+      <DependentUpon>crpt_DepartmentTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DepartmentTestReport.vb">
+      <DependentUpon>crpt_DepartmentTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DailyTestReportDetail.vb">
+      <DependentUpon>crpt_DailyTestReportDetail.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crptPrintBarcode.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crptPrintBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DetailTestReport.vb">
+      <DependentUpon>crpt_DetailTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DailyTestReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DailyTestReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DetailTestReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DetailTestReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_PatientList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_PatientList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_ServiceList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_ServiceList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_ThongkesoluongXN.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_ThongkesoluongXN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DetailTestReport_ALL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HP_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DetailTestReport_ALL_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HP_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DetailTestReport_TESTTYPE.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HP_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HP_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Haiphong\HP_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HP_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DetailTestReport_ALL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DetailTestReport_ALL_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DetailTestReport_TESTTYPE.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThaiHa\HN_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HN_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VietDuc\VD_crpt_DetailTestReport_ALL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VietDuc\VD_crpt_DetailTestReport_ALL_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VietDuc\VD_crpt_DetailTestReport_TESTTYPE.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VietDuc\VD_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_SinhHoa.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_SinhHoa.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_HuyetHoc.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_HuyetHoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_SinhHoa.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_TESTTYPE_SinhHoa.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_HuyetHoc.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_TESTTYPE_HuyetHoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DailyParamTestReport1.vb">
+      <DependentUpon>XayDung_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_TESTTYPE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DailyParamTestReport.vb">
+      <DependentUpon>XayDung_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DailyParamTestReport2.vb">
+      <DependentUpon>XayDung_crpt_DailyParamTestReport2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALL.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_ALL.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALL_Sub.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_ALL_Sub.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_2.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_TESTTYPE_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_1.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_TESTTYPE_1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_Sub.vb">
+      <DependentUpon>XayDung_crpt_DetailTestReport_TESTTYPE_Sub.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Classes\clsTrapBoolColumn.resx">
+      <DependentUpon>clsTrapBoolColumn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\HCDataGridKeyTrapTextBoxColumn.resx">
+      <DependentUpon>HCDataGridKeyTrapTextBoxColumn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\HCKeyTrapTextBox.resx">
+      <DependentUpon>HCKeyTrapTextBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPatient_InfoV1.resx">
+      <DependentUpon>frmPatient_InfoV1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_ParamTestReport_VNIO.resx">
+      <DependentUpon>Frm_ParamTestReport_VNIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_InBarcodeV2.resx">
+      <DependentUpon>frm_InBarcodeV2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoadExcel.resx">
+      <DependentUpon>frmLoadExcel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPatient_Info_LaoKhoa.resx">
+      <DependentUpon>frmPatient_Info_LaoKhoa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_QuickInput.resx">
+      <DependentUpon>frm_QuickInput.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmParaTestReportV2.resx">
+      <DependentUpon>frmParaTestReportV2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPatient_Info.resx">
+      <DependentUpon>frmPatient_Info.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchLam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearchLam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_BackupDevices.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_BackupDevices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_EnterLam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_EnterLam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Export_Import_Devices.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Export_Import_Devices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_InBarcode.resx">
+      <DependentUpon>frm_InBarcode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_LamInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_LamInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ObjectType.resx">
+      <DependentUpon>frm_ObjectType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ChooseTestDate.resx">
+      <DependentUpon>frm_ChooseTestDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_SeachPatient_Result.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_SeachPatient_Result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestInforV2_LaoKhoa.resx">
+      <DependentUpon>frm_TestInforV2_LaoKhoa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_UpdateTestForPatient.resx">
+      <DependentUpon>frm_UpdateTestForPatient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_BackupData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_BackupData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Communication.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Communication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_ParamTestReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ParamTestReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Preview.resx">
+      <DependentUpon>frm_Preview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_SignInfor.resx">
+      <DependentUpon>frm_SignInfor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_CacheCrystalReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_CacheCrystalReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_DepartmentTestReport.resx">
+      <DependentUpon>frm_DepartmentTestReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Department.resx">
+      <DependentUpon>frm_Department.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Department_Room.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Department_Room.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_PatientTestDetailList.resx">
+      <DependentUpon>frm_PatientTestDetailList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_DailyTestReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_DailyTestReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Doctor_List.resx">
+      <DependentUpon>frm_Doctor_List.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTest_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTest_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPatientList.resx">
+      <DependentUpon>frmPatientList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_GroupType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_GroupType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_RoleList.resx">
+      <DependentUpon>frm_RoleList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_PatientList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_PatientList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_RoomList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_RoomList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_SearchOnGrid.resx">
+      <DependentUpon>frm_SearchOnGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestDetailV2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_TestDetailV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestInfo.resx">
+      <DependentUpon>frm_TestInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestInforV2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_TestInforV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_TestList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestParamList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_TestParamList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestTypeList.resx">
+      <DependentUpon>frm_TestTypeList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReportMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestGroupList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_TestGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TestTypesPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_TestTypesPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_UpdateTestDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_UpdateTestDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBarcodePrinter.resx">
+      <DependentUpon>frmBarcodePrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VNIO_frmBatchInput.resx">
+      <DependentUpon>VNIO_frmBatchInput.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VNIO_frm_TestParamList.resx">
+      <DependentUpon>VNIO_frm_TestParamList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_InBarcodeHangLoat.resx">
+      <DependentUpon>frm_InBarcodeHangLoat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LAOKHOA\LAOKHOA_crpt_DetailTestReport_ALL1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LAOKHOA_crpt_DetailTestReport_ALL1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LAOKHOA\LAOKHOA_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LAOKHOA_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LAOKHOA\LAOKHOA_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LAOKHOA_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LAOKHOA\LAOKHOA_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LAOKHOA_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LAOKHOA\LAOKHOA_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LAOKHOA_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LAOKHOA\LAOKHOA_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LAOKHOA_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NHTD_crtp_PrintNoBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NHTD_crtp_PrintNoBarcode.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DetailTestReport_ALLV2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DetailTestReport_ALLV2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NHTDHH_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NHTDHH_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DetailTestReport_TESTTYPE_2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VABIOTECH\Vabiotech_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vabiotech_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\new_VD_1C_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>new_VD_1C_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\new_VD_1C_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>new_VD_1C_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DetailTestReport_ALL2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DetailTestReport_TESTTYPE_2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VD_1C\VD_1C_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_1C_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\A5\A5_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>A5_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HongNgoc\HongNgoc_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HongNgoc_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HongNgoc\HongNgoc_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HongNgoc_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HongNgoc\HongNgoc_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HongNgoc_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HongNgoc\HongNgoc_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HongNgoc_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HongNgoc\HongNgoc_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HongNgoc_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALLFromDateToDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_ALLFromDateToDate.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALLFromDateToDateAllPatient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_ALLFromDateToDateAllPatient.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPEFromDateToDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_TESTTYPEFromDateToDate.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_PrintInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_PrintInvoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_crpt_PrintInvoice_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_crpt_PrintInvoice_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JCLV\JCLV_DailyTestReportDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JCLV_DailyTestReportDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DetailTestReport_TESTTYPE_2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DailyParamTestReport11.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NIITD\NIITD_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NIITD_crpt_DailyParamTestReport21.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\US1000\US1000_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>US1000_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_GeneralDetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_GeneralDetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VienTimHN\VienTimHN_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VienTimHN_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VienTimHN\VienTimHN_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VienTimHN_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VienTimHN\VienTimHN_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VienTimHN_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VienTimHN\VienTimHN_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VienTimHN_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VienTimHN\VienTimHN_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VienTimHN_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VietDuc\VD_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VietDuc\VD_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VietDuc\VD_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DepartmentTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DepartmentTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DepartmentTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DepartmentTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DailyTestReportDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DailyTestReportDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crptPrintBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crptPrintBarcode.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DetailTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DetailTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DailyTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DailyTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DetailTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DetailTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_PatientList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_PatientList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_ServiceList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_ServiceList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_ThongkesoluongXN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_ThongkesoluongXN.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Haiphong\HP_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HP_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThaiHa\HN_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HN_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VietDuc\VD_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VietDuc\VD_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VietDuc\VD_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VietDuc\VD_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_SinhHoa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_SinhHoa.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_HuyetHoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient_HuyetHoc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_ALLFromDateToDateAllPatient.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_SinhHoa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_TESTTYPE_SinhHoa.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_HuyetHoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_TESTTYPE_HuyetHoc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DailyParamTestReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_TESTTYPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DailyParamTestReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DailyParamTestReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DailyParamTestReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_ALL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_ALL_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_ALL_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_TESTTYPE_2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_TESTTYPE_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XayDung\XayDung_crpt_DetailTestReport_TESTTYPE_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XayDung_crpt_DetailTestReport_TESTTYPE_Sub.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\091.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\036.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRINT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISK04.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dataset\ds_dailyDetailTestReport.xsc">
+      <DependentUpon>ds_dailyDetailTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_dailyDetailTestReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_dailyDetailTestReport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_dailyDetailTestReport.xss">
+      <DependentUpon>ds_dailyDetailTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsPatient.xsc">
+      <DependentUpon>dsPatient.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsPatient.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPatient.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsPatient.xss">
+      <DependentUpon>dsPatient.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsPrintBarcode.xsc">
+      <DependentUpon>dsPrintBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsPrintBarcode.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintBarcode.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsPrintBarcode.xss">
+      <DependentUpon>dsPrintBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsTestResult.xsc">
+      <DependentUpon>dsTestResult.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsTestResult.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTestResult.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsTestResult.xss">
+      <DependentUpon>dsTestResult.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsTestResultPrint.xsc">
+      <DependentUpon>dsTestResultPrint.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsTestResultPrint.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTestResultPrint.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsTestResultPrint.xss">
+      <DependentUpon>dsTestResultPrint.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_DailyTestReport.xsc">
+      <DependentUpon>ds_DailyTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_DailyTestReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_DailyTestReport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_DailyTestReport.xss">
+      <DependentUpon>ds_DailyTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_DepartmentTestReport.xsc">
+      <DependentUpon>ds_DepartmentTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_DepartmentTestReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_DepartmentTestReport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_DepartmentTestReport.xss">
+      <DependentUpon>ds_DepartmentTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_JCLV.xsc">
+      <DependentUpon>ds_JCLV.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_JCLV.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_JCLV.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_JCLV.xss">
+      <DependentUpon>ds_JCLV.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_NB.xsc">
+      <DependentUpon>ds_NB.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_NB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_NB.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_NB.xss">
+      <DependentUpon>ds_NB.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_QLPK.xsc">
+      <DependentUpon>ds_QLPK.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_QLPK.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_QLPK.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_QLPK.xss">
+      <DependentUpon>ds_QLPK.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_ServiceList.xsc">
+      <DependentUpon>ds_ServiceList.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_ServiceList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_ServiceList.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_ServiceList.xss">
+      <DependentUpon>ds_ServiceList.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Ping.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dataset\dsTestResultPrintV2.xsc">
+      <DependentUpon>dsTestResultPrintV2.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsTestResultPrintV2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTestResultPrintV2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\dsTestResultPrintV2.xss">
+      <DependentUpon>dsTestResultPrintV2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MS-Office-2003-Excel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export-excel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-Folder-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VietBaIT.CommonLibrary\VietBaIT.CommonLibrary.csproj">
+      <Project>{50f5ac97-89ab-45f1-942d-86a37c3cf203}</Project>
+      <Name>VietBaIT.CommonLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

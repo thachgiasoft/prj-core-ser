@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DATA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ROW>
+		<id>1</id>
+		<entity_uid>LCLS_C1</entity_uid>
+		<ma_loai_can_lam_sang>C</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Calci</ten_loai_can_lam_sang>
+		<thong_so_chuan>2,15 - 2,6 mmol/L</thong_so_chuan>
+		<ten_viet_tat>C</ten_viet_tat>
+		<vi_tri>5</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>2</id>
+		<entity_uid>LCLS_TG1</entity_uid>
+		<ma_loai_can_lam_sang>TG</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Triglycerid (TG)</ten_loai_can_lam_sang>
+		<thong_so_chuan>0,46 - 1,88 mmol/L</thong_so_chuan>
+		<ten_viet_tat>TG</ten_viet_tat>
+		<vi_tri>11</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>3</id>
+		<entity_uid>LCLS_HDL-C</entity_uid>
+		<ma_loai_can_lam_sang>HDL-C</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Cholesterol HDL-C</ten_loai_can_lam_sang>
+		<thong_so_chuan>&gt;= 0,9 mmol/L</thong_so_chuan>
+		<ten_viet_tat>HDL-C</ten_viet_tat>
+		<vi_tri>21</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>4</id>
+		<entity_uid>LCLS_LDL-C</entity_uid>
+		<ma_loai_can_lam_sang>LDL-C</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Cholesterol LDL-C</ten_loai_can_lam_sang>
+		<thong_so_chuan>&lt;= 3,4 mmol/L</thong_so_chuan>
+		<ten_viet_tat>LDL</ten_viet_tat>
+		<vi_tri>20</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>5</id>
+		<entity_uid>LCLS_TP</entity_uid>
+		<ma_loai_can_lam_sang>TP</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Cholesterol Toàn Phần</ten_loai_can_lam_sang>
+		<thong_so_chuan>3,9 - 5,2 mmol/L</thong_so_chuan>
+		<ten_viet_tat>TP</ten_viet_tat>
+		<vi_tri>19</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>6</id>
+		<entity_uid>LCLS_GOT</entity_uid>
+		<ma_loai_can_lam_sang>GOT</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>GOT (Transaminasa)</ten_loai_can_lam_sang>
+		<thong_so_chuan>&lt;= 37 U/L-37*C</thong_so_chuan>
+		<ten_viet_tat>GOT</ten_viet_tat>
+		<vi_tri>10</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>7</id>
+		<entity_uid>LCLS_GPT</entity_uid>
+		<ma_loai_can_lam_sang>GPT</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>GPT (Transaminasa)</ten_loai_can_lam_sang>
+		<thong_so_chuan>&lt;= 40 U/L-37*C</thong_so_chuan>
+		<ten_viet_tat>GPT</ten_viet_tat>
+		<vi_tri>9</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>8</id>
+		<entity_uid>Soi cặn nước tiểu</entity_uid>
+		<ma_loai_can_lam_sang>Soi cặn nước tiểu</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Soi cặn nước tiểu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>SCNT</ten_viet_tat>
+		<vi_tri>2</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>9</id>
+		<entity_uid>LCLS_NTTP</entity_uid>
+		<ma_loai_can_lam_sang>NTTP</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Nước Tiểu (10 Thông Số Máy + Soi cặn nước tiểu)</ten_loai_can_lam_sang>
+		<ten_viet_tat>NTTP</ten_viet_tat>
+		<vi_tri>1</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>10</id>
+		<entity_uid>Xác định tế bào/trụ hay các tinh thể</entity_uid>
+		<ma_loai_can_lam_sang>Xác định tế bào/trụ hay các tinh thể khác</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Xác định tế bào/trụ hay các tinh thể khác</ten_loai_can_lam_sang>
+		<ten_viet_tat>TB/T</ten_viet_tat>
+		<vi_tri>7</vi_tri>
+		<id_mau_phieu_xet_nghiem>1</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>11</id>
+		<entity_uid>LCLS_XDTTNTPH</entity_uid>
+		<ma_loai_can_lam_sang>XDTTNTPH</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Xác định tỷ trọng nước tiểu/pH</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>TT-NT</ten_viet_tat>
+		<vi_tri>3</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>12</id>
+		<entity_uid>LCLS_PTR1</entity_uid>
+		<ma_loai_can_lam_sang>PRT1</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Protein total</ten_loai_can_lam_sang>
+		<ten_viet_tat>PT</ten_viet_tat>
+		<vi_tri>6</vi_tri>
+		<id_mau_phieu_xet_nghiem>1</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>13</id>
+		<entity_uid>LCLS_AU</entity_uid>
+		<ma_loai_can_lam_sang>AU</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Acid uric</ten_loai_can_lam_sang>
+		<thong_so_chuan>Nam: 180 - 420 umol/L; Nữ: 150 - 360 umol/L</thong_so_chuan>
+		<ten_viet_tat>Acid uric</ten_viet_tat>
+		<vi_tri>12</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>14</id>
+		<entity_uid>LCLS_CR</entity_uid>
+		<ma_loai_can_lam_sang>CR</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Creatinin</ten_loai_can_lam_sang>
+		<thong_so_chuan>Nam: 62 - 120 umol/L; Nữ: 53 - 100 umol/L</thong_so_chuan>
+		<ten_viet_tat>Creatinin</ten_viet_tat>
+		<vi_tri>5</vi_tri>
+		<id_mau_phieu_xet_nghiem>1</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>29</id>
+		<entity_uid>LCLS_NCLVKGBBAPIKSD</entity_uid>
+		<ma_loai_can_lam_sang>NCLVKGBBAPIKSD</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Nuôi cấy lập vi khuẩn gây bệnh bằng bộ API và kháng sinh đồ</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>NC=API</ten_viet_tat>
+		<vi_tri>13</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>38</id>
+		<entity_uid>LCLS_CCM</entity_uid>
+		<ma_loai_can_lam_sang>CCM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Co cục máu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>CC máu</ten_viet_tat>
+		<vi_tri>8</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>39</id>
+		<entity_uid>LCLS_CTM</entity_uid>
+		<ma_loai_can_lam_sang>CTM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Công thức máu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>CTM</ten_viet_tat>
+		<vi_tri>7</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>43</id>
+		<entity_uid>LCLS_He</entity_uid>
+		<ma_loai_can_lam_sang>He</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Hematocrit</ten_loai_can_lam_sang>
+		<thong_so_chuan>Nam: 0,38 - 0,50 l/l; Nữ: 0,35 - 0,47 l/l</thong_so_chuan>
+		<ten_viet_tat>Hema</ten_viet_tat>
+		<vi_tri>18</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>44</id>
+		<entity_uid>LCLS_HST</entity_uid>
+		<ma_loai_can_lam_sang>HST</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Huyết sắc tố</ten_loai_can_lam_sang>
+		<thong_so_chuan>Nam: 140 - 160 g/l; Nữ: 125 - 145 g/l</thong_so_chuan>
+		<ten_viet_tat>HST</ten_viet_tat>
+		<vi_tri>9</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>45</id>
+		<entity_uid>LCLS_HD</entity_uid>
+		<ma_loai_can_lam_sang>HD</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Huyết đồ</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>HD</ten_viet_tat>
+		<vi_tri>10</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>47</id>
+		<entity_uid>LCLS_ML</entity_uid>
+		<ma_loai_can_lam_sang>MCMĐ</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Máu Chảy - Máu Đông</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>MC-MĐ</ten_viet_tat>
+		<vi_tri>1</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>48</id>
+		<entity_uid>LCLS_MD</entity_uid>
+		<ma_loai_can_lam_sang>ML</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Máu lắng</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>ML</ten_viet_tat>
+		<vi_tri>2</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>49</id>
+		<entity_uid>LCLS_NM</entity_uid>
+		<ma_loai_can_lam_sang>NM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Nhóm máu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>NM</ten_viet_tat>
+		<vi_tri>3</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>50</id>
+		<entity_uid>LCLS_PTM</entity_uid>
+		<ma_loai_can_lam_sang>TC</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Tiều cầu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>TC</ten_viet_tat>
+		<vi_tri>4</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>51</id>
+		<entity_uid>LCLS_PUC</entity_uid>
+		<ma_loai_can_lam_sang>PUC</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Phản ứng chéo</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>PUC</ten_viet_tat>
+		<vi_tri>5</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>52</id>
+		<entity_uid>LCLS_SLTC</entity_uid>
+		<ma_loai_can_lam_sang>SLTC</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Số lượng tiểu cầu</ten_loai_can_lam_sang>
+		<thong_so_chuan>150 - 400x(10)9/l</thong_so_chuan>
+		<ten_viet_tat>TC</ten_viet_tat>
+		<vi_tri>6</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>53</id>
+		<entity_uid>LCLS_TRW</entity_uid>
+		<ma_loai_can_lam_sang>TRW</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Test Rose-Waller</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>TRW</ten_viet_tat>
+		<vi_tri>16</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>54</id>
+		<entity_uid>LCLS_TGH</entity_uid>
+		<ma_loai_can_lam_sang>TGH</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Thời gian Howel</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>TGH</ten_viet_tat>
+		<vi_tri>15</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>55</id>
+		<entity_uid>LCLS_TGQ</entity_uid>
+		<ma_loai_can_lam_sang>TGQ</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Thời gian Quick</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>TGQ</ten_viet_tat>
+		<vi_tri>17</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>56</id>
+		<entity_uid>LCLS_TC</entity_uid>
+		<ma_loai_can_lam_sang>PTM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Phân tích máu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>PTM</ten_viet_tat>
+		<vi_tri>11</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>57</id>
+		<entity_uid>LCLS_TKST</entity_uid>
+		<ma_loai_can_lam_sang>TKST</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Tìm KST sốt rét trong máu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>KST</ten_viet_tat>
+		<vi_tri>14</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>58</id>
+		<entity_uid>LCLS_DMCB</entity_uid>
+		<ma_loai_can_lam_sang>DMCB</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Đông máu cơ bản</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>DMCB</ten_viet_tat>
+		<vi_tri>12</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>64</id>
+		<entity_uid>LCLS_DVM</entity_uid>
+		<ma_loai_can_lam_sang>DVM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Điện võng mạc</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>ĐVM</ten_viet_tat>
+		<vi_tri>4</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>89</id>
+		<entity_uid>PTTB</entity_uid>
+		<ma_loai_can_lam_sang>PTTB</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Tổng phân tích tế bào máu bằng máy đếm tự động</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>PTTB</ten_viet_tat>
+		<vi_tri>13</vi_tri>
+		<id_mau_phieu_xet_nghiem>7</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>97</id>
+		<entity_uid>LCLS_DM1</entity_uid>
+		<ma_loai_can_lam_sang>DM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Đường Máu</ten_loai_can_lam_sang>
+		<thong_so_chuan>3,9 - 6,4 mmol/L</thong_so_chuan>
+		<ten_viet_tat>Đường</ten_viet_tat>
+		<vi_tri>1</vi_tri>
+		<id_mau_phieu_xet_nghiem>1</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>99</id>
+		<entity_uid>LCLS_UM</entity_uid>
+		<ma_loai_can_lam_sang>UM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Ure</ten_loai_can_lam_sang>
+		<thong_so_chuan>2,5 - 7,5 mmol/L</thong_so_chuan>
+		<ten_viet_tat>Ure</ten_viet_tat>
+		<vi_tri>2</vi_tri>
+		<id_mau_phieu_xet_nghiem>1</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>100</id>
+		<entity_uid>LCLS_CM1</entity_uid>
+		<ma_loai_can_lam_sang>CM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Đường-ure-canxi</ten_loai_can_lam_sang>
+		<ten_viet_tat>Đ-U-C</ten_viet_tat>
+		<vi_tri>3</vi_tri>
+		<id_mau_phieu_xet_nghiem>1</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>120</id>
+		<entity_uid>DCM</entity_uid>
+		<ma_loai_can_lam_sang>DCM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Đo độ cồn trong máu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>CTM</ten_viet_tat>
+		<vi_tri>4</vi_tri>
+		<id_mau_phieu_xet_nghiem>1</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>124</id>
+		<entity_uid>KXDM</entity_uid>
+		<ma_loai_can_lam_sang>KXDM</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Đo khúc xạ có soi đáy mắt</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>ĐKX-SĐM</ten_viet_tat>
+		<vi_tri>5</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>127</id>
+		<entity_uid>DVMOBC</entity_uid>
+		<ma_loai_can_lam_sang>DVMOBC</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Điện võng mạc ô bàn cờ</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>ĐVM ô bàn cờ</ten_viet_tat>
+		<vi_tri>6</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>129</id>
+		<entity_uid>DCKT</entity_uid>
+		<ma_loai_can_lam_sang>DCKT</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Điện chẩm kích thích</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>ĐCKT</ten_viet_tat>
+		<vi_tri>7</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+	<ROW>
+		<id>130</id>
+		<entity_uid>DNC</entity_uid>
+		<ma_loai_can_lam_sang>DNC</ma_loai_can_lam_sang>
+		<ten_loai_can_lam_sang>Điện nhãn cầu</ten_loai_can_lam_sang>
+		<thong_so_chuan>NULL</thong_so_chuan>
+		<ten_viet_tat>ĐNC</ten_viet_tat>
+		<vi_tri>8</vi_tri>
+		<id_mau_phieu_xet_nghiem>6</id_mau_phieu_xet_nghiem>
+	</ROW>
+</DATA>

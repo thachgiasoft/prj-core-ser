@@ -1,0 +1,2 @@
+D:\_TestImg
+Dòng 1: Đường dẫn của thư mục chứa ảnh trên máy XT-400i

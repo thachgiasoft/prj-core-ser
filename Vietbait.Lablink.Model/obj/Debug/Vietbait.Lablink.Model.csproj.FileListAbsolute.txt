@@ -1,0 +1,17 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.Model2.dll.config
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.Model2.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\debug\Vietbait.Lablink.Model2.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model2.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2Astm\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model2.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Model2.dll.config
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Model2.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Model2.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model2.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model2.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Model.dll.config
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Model.dll
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Model.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model.csprojResolveAssemblyReference.cache
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model.dll
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Model\obj\Debug\Vietbait.Lablink.Model.pdb

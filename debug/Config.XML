@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Config>
+    <SERVERADDRESS>vietbait.no-ip.org</SERVERADDRESS>
+    <DATABASE_ID>LAB_VNIO_20140514</DATABASE_ID>
+    <USERNAME>sa</USERNAME>
+    <PASSWORD>vietbaitsql2012</PASSWORD>
+    <BranchID>THAIHA</BranchID>
+    <LANGUAGEDISPLAY>VN</LANGUAGEDISPLAY>
+    <INTERFACEDISPLAY>MENU</INTERFACEDISPLAY>
+    <LOCALALIAS>HUYETHOC</LOCALALIAS>
+  </Config>
+</NewDataSet>

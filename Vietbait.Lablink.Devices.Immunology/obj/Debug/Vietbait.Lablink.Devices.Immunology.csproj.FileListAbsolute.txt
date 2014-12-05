@@ -1,0 +1,10 @@
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Immunology.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Immunology.pdb
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Immunology\obj\Debug\Vietbait.Lablink.Devices.Immunology.csprojResolveAssemblyReference.cache
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Immunology\obj\Debug\Vietbait.Lablink.Devices.Immunology.dll
+E:\VBIT\LABlinkVer2New\branches\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Immunology\obj\Debug\Vietbait.Lablink.Devices.Immunology.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Immunology.dll
+D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Devices.Immunology.pdb
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Immunology\obj\Debug\Vietbait.Lablink.Devices.Immunology.csprojResolveAssemblyReference.cache
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Immunology\obj\Debug\Vietbait.Lablink.Devices.Immunology.dll
+D:\Sys\VB\LABLinkVer2AstmNew\Vietbait.Lablink.Devices.Immunology\obj\Debug\Vietbait.Lablink.Devices.Immunology.pdb
