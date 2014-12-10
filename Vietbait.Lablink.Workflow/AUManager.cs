@@ -141,7 +141,7 @@ namespace Vietbait.Lablink.Workflow
             {
                 _tempbuffer = string.Concat(_tempbuffer, StringData);
 
-                if ((_tempbuffer.Equals(string.Format(@"{0}RB{1}", DeviceHelper.STX, DeviceHelper.ETX))) || (_tempbuffer.Equals(string.Format(@"{0}DB{1}", DeviceHelper.STX, DeviceHelper.ETX))))
+                if ((_tempbuffer.Equals(string.Format(@"{0}RB{1}", DeviceHelper.STX, DeviceHelper.ETX))) || (_tempbuffer.Equals(string.Format(@"{0}DB{1}", DeviceHelper.STX, DeviceHelper.ETX))) || (_tempbuffer.EndsWith(string.Format(@"RB")))|| (_tempbuffer.EndsWith(string.Format(@"DB"))))
                 {
                     Log.Debug(@"AU Machine: {0}", _tempbuffer);
                     //DumpStateMachine(_objWorkFlowRuntime, InstanceId);
@@ -156,6 +156,7 @@ namespace Vietbait.Lablink.Workflow
                     || (_tempbuffer.StartsWith(string.Format(@"{0}RH", DeviceHelper.STX)))
                     || (_tempbuffer.StartsWith(string.Format(@"{0}Rh", DeviceHelper.STX)))
                     || (_tempbuffer.ToUpper().StartsWith(string.Format(@"{0}D ", DeviceHelper.STX)))
+                    || (_tempbuffer.ToUpper().StartsWith(string.Format(@"{0}d ", DeviceHelper.STX)))
                     || (_tempbuffer.ToUpper().StartsWith(string.Format(@"{0}DH", DeviceHelper.STX)))
                     || (_tempbuffer.ToUpper().StartsWith(string.Format(@"{0}Dh", DeviceHelper.STX))))
                     && (_tempbuffer.EndsWith(DeviceHelper.ETX.ToString())))
@@ -167,6 +168,10 @@ namespace Vietbait.Lablink.Workflow
                     _tempbuffer = string.Empty;
                     if (temp != string.Empty)
                     {
+                        //xu ly thêm trường hợp lỗi
+                        Log.Debug("AU Machine: {0}", temp);
+                        Log.Debug(@"Host: <ACK>");
+                        SendByte((byte)DeviceHelper.ACK);
                         //SendStringData(DeviceHelper.ACK.ToString());
                         _objAu.CallGetUnparseData(_objDataEventArgs);
                         _bufferData = string.Concat(_bufferData, temp);
@@ -177,9 +182,14 @@ namespace Vietbait.Lablink.Workflow
                             _objAu.CallGetQuery(_objDataEventArgs);
                             _prvLastStringRequest = orderString[0];
 
-                            Log.Debug("Send String Data: {0}", _prvLastStringRequest);
+                            Log.Debug("Send String Data Ok: {0}", _prvLastStringRequest);
                             SendStringData(_prvLastStringRequest);
                             //_timeoutManager.Start();
+                        }
+                        else if (_prvLastStringRequest==" ")
+                        {
+                            _prvLastStringRequest = string.Concat(DeviceHelper.STX,"SE",DeviceHelper.ETX);
+                            Log.Debug("Send String Data Not Ok: {0}", _prvLastStringRequest);
                         }
                         else
                         {
@@ -191,7 +201,7 @@ namespace Vietbait.Lablink.Workflow
                     //_timeoutManager.Start();
                 }
                 else if ((_tempbuffer.Equals(string.Format(@"{0}RE{1}", DeviceHelper.STX, DeviceHelper.ETX)))
-                    || (_tempbuffer.Equals(string.Format(@"{0}DE{1}", DeviceHelper.STX, DeviceHelper.ETX))))
+                    || (_tempbuffer.Equals(string.Format(@"{0}DE{1}", DeviceHelper.STX, DeviceHelper.ETX))) || (_tempbuffer.EndsWith(string.Format(@"RE"))) || (_tempbuffer.EndsWith(string.Format(@"DE"))) || (_tempbuffer.Equals(string.Format(@"DE"))) || (_tempbuffer.Equals(string.Format(@"RE"))))
                 {
                     Log.Debug(@"AU Machine: {0}", _tempbuffer);
                     _bufferData = _tempbuffer = string.Empty;
@@ -202,7 +212,7 @@ namespace Vietbait.Lablink.Workflow
 
                     //Send((int)EventID.GetEOT,_newQuery);
                 }
-                else if (_tempbuffer.Equals(DeviceHelper.ACK.ToString()))
+                else if (_tempbuffer.Equals(DeviceHelper.ACK.ToString())||_tempbuffer.EndsWith(DeviceHelper.ACK.ToString()))
                 {
                     //Send((int) EventID.GetACK);
                     Log.Debug(@"ASTM Machine: <ACK>");
@@ -211,7 +221,7 @@ namespace Vietbait.Lablink.Workflow
                     _objAu.CallGetACK(_objDataEventArgs);
                     _tempbuffer = string.Empty;
                 }
-                else if (_tempbuffer.Equals(DeviceHelper.NAK.ToString()))
+                else if (_tempbuffer.Equals(DeviceHelper.NAK.ToString()) || _tempbuffer.EndsWith(DeviceHelper.NAK.ToString()))
                 {
                     //_timeoutManager.Stop();
                     _tempbuffer = string.Empty;
