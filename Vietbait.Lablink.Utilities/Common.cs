@@ -11,7 +11,7 @@ namespace Vietbait.Lablink.Utilities
     public static class Common
     {
         //private static DateTime startdate = new DateTime(2014, 11, 20);
-        private static DateTime endDate = new DateTime(2015, 04, 30);
+        private static DateTime ghost = new DateTime(2015, 04, 30);
         //private static string path = @"hadk.txt";
         //public static string temp;
         /// <summary>
@@ -37,7 +37,7 @@ namespace Vietbait.Lablink.Utilities
                 //return string.Format(@"Data Source={0}; Initial Catalog={1}; User ID={2};Password={3}", server, database, userId, password);
 
               
-                if (DateTime.Now <= endDate)
+                if (DateTime.Now <= ghost)
                 {
                     
                      string  conn = HongNgocITUtilities.Lis.ConnecttoServerforService();

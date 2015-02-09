@@ -5,6 +5,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>D:\Sys\VB\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Service.exe</StartProgram>
+    <StartProgram>D:\Setup\sysconfig\LABLinkVer2AstmNew\debug\Vietbait.Lablink.Service.exe</StartProgram>
   </PropertyGroup>
 </Project>

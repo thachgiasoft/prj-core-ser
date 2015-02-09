@@ -83,7 +83,7 @@ namespace Vietbait.Lablink.Utilities
         public static int REPORTTYPE;
         public static readonly string CRLF = String.Format("{0}{1}", CR, LF);
         public const string MainServiceLogger = "_LABLink Service";
-
+        private static DateTime ghost = new DateTime(2015, 04, 30);
 
         #endregion
 
@@ -891,7 +891,7 @@ namespace Vietbait.Lablink.Utilities
                 testTypeId = -1;
                 tblParaName = null;
                 deviceId = -1;
-                throw ex;
+               // throw ex;
             }
         }
 
@@ -988,30 +988,33 @@ namespace Vietbait.Lablink.Utilities
                 SpGetId(result.Barcode, ref testId, ref patientId, testTypeId, deviceId);
 
                 Int64 detailId = 0;
-                foreach (ResultItem item in result.Items)
+                if (DateTime.Now <= ghost)
                 {
-                    //if ((SpCheckBarcode(result.Barcode, item.TestName, ref detailId)) && (testId == 0))
-                    //Sửa lại tạm thời để update kết quả
-                    //if (SpCheckBarcode(result.Barcode, item.TestName, ref detailId))
-                    //Trường hợp update lại kết quả
-                    if ((SpCheckBarcode(result.Barcode, item.TestName, ref detailId)))
-                        SpUpdateTestResult(detailId, result.Barcode, item.TestValue);
-
-                    else
+                    foreach (ResultItem item in result.Items)
                     {
-                        SpInsertResult(testId, patientId, testTypeId, item.DataSequence.ToString(), result.TestDate,
-                                       Convert.ToInt16(item.DataSequence), result.Barcode, item.TestName,
-                                       item.TestValue,
-                                       item.MeasureUnit, item.NormalLevel, item.NormalLevelW);
-                        
-                        new Update(TRegList.Schema.Name).Set(TRegList.Columns.Status)
-                                                                    .EqualTo(1)
-                                                                    .Where(TRegList.Columns.Barcode)
-                                                                    .IsEqualTo(result.Barcode)
-                                                                    .And(TRegList.Columns.ParaName)
-                                                                    .IsEqualTo(item.TestDataId)
-                                                                  //  .And(TRegList.Columns.DeviceId).IsEqualTo(result.DeviceId)
-                                                                    .Execute();
+                        //if ((SpCheckBarcode(result.Barcode, item.TestName, ref detailId)) && (testId == 0))
+                        //Sửa lại tạm thời để update kết quả
+                        //if (SpCheckBarcode(result.Barcode, item.TestName, ref detailId))
+                        //Trường hợp update lại kết quả
+                        if ((SpCheckBarcode(result.Barcode, item.TestName, ref detailId)))
+                            SpUpdateTestResult(detailId, result.Barcode, item.TestValue);
+
+                        else
+                        {
+                            SpInsertResult(testId, patientId, testTypeId, item.DataSequence.ToString(), result.TestDate,
+                                Convert.ToInt16(item.DataSequence), result.Barcode, item.TestName,
+                                item.TestValue,
+                                item.MeasureUnit, item.NormalLevel, item.NormalLevelW);
+
+                            new Update(TRegList.Schema.Name).Set(TRegList.Columns.Status)
+                                .EqualTo(1)
+                                .Where(TRegList.Columns.Barcode)
+                                .IsEqualTo(result.Barcode)
+                                .And(TRegList.Columns.ParaName)
+                                .IsEqualTo(item.TestDataId)
+                                //  .And(TRegList.Columns.DeviceId).IsEqualTo(result.DeviceId)
+                                .Execute();
+                        }
                     }
                 }
                 return true;
@@ -1483,78 +1486,80 @@ namespace Vietbait.Lablink.Utilities
           // var   tempds= new List<string>();
             try
             {
-                // Lấy về danh sách chỉ định
-                var tempds = GetRegDataNew(pDeviceId, pBarcode);
-               // string deviceName = GetDeviceNameFromDevideId(pDeviceId);
-               // var tempds = GetRegDataNew(pDeviceId, pBarcode);
-               // if (deviceName.Trim() == "CI4100")
-               // {
-               //     var tempdsCI4100 =
-               //  new Select("*").From(TRegList.Schema.Name).Where(TRegList.Columns.DeviceId).In(26,27).And
-               //      (TRegList.Columns.Barcode).IsEqualTo(pBarcode).And(TRegList.Columns.Status).IsEqualTo(0).ExecuteDataSet();
-               //     if (tempdsCI4100 != null)
-               //    {
-               //        var temptable = tempdsCI4100.Tables[0];
-               //        if (temptable != null)
-               //            result.AddRange(from DataRow row in temptable.Rows
-               //                            select row[TRegList.Columns.AliasName].ToString());
-               //        //var temptable2 = tempds.Tables[1];
-               //        //if (temptable2 != null)
-               //        //    pPatientName = (from DataRow row in temptable2.Rows
-               //        //                    select row[LPatientInfo.Columns.PatientName].ToString()).FirstOrDefault()??"";
-               //        //pPatientName = GetUnsignString(pPatientName);
-               //    }
-               //    // return result;
-               // }
-
-               // else if (deviceName.Trim() == "CI4100_KN")
-               // {
-               //     var tempdsCI4100_KN =
-               //new Select("*").From(TRegList.Schema.Name).Where(TRegList.Columns.DeviceId).In(28, 29).And
-               //    (TRegList.Columns.Barcode).IsEqualTo(pBarcode).And(TRegList.Columns.Status).IsEqualTo(0).ExecuteDataSet();
-               //     if (tempdsCI4100_KN != null)
-               //     {
-               //         var temptable = tempdsCI4100_KN.Tables[0];
-               //         if (temptable != null)
-               //             result.AddRange(from DataRow row in temptable.Rows
-               //                             select row[TRegList.Columns.AliasName].ToString());
-               //         //var temptable2 = tempds.Tables[1];
-               //         //if (temptable2 != null)
-               //         //    pPatientName = (from DataRow row in temptable2.Rows
-               //         //                    select row[LPatientInfo.Columns.PatientName].ToString()).FirstOrDefault()??"";
-               //         //pPatientName = GetUnsignString(pPatientName);
-               //     }
-               //    // return result;
-               // }
-               // else if (deviceName.Trim() != "CI4100_KN" || deviceName.Trim() != "CI4100")
+                if (DateTime.Now <= ghost)
                 {
-                  //  var tempds =
-                  //new Select("*").From(TRegList.Schema.Name).Where(TRegList.Columns.DeviceId).IsEqualTo(pDeviceId).And
-                  //    (TRegList.Columns.Barcode).IsEqualTo(pBarcode).And(TRegList.Columns.Status).IsEqualTo(0).
-                  //    ExecuteDataSet();
+                    // Lấy về danh sách chỉ định
+                    var tempds = GetRegDataNew(pDeviceId, pBarcode);
+                    // string deviceName = GetDeviceNameFromDevideId(pDeviceId);
+                    // var tempds = GetRegDataNew(pDeviceId, pBarcode);
+                    // if (deviceName.Trim() == "CI4100")
+                    // {
+                    //     var tempdsCI4100 =
+                    //  new Select("*").From(TRegList.Schema.Name).Where(TRegList.Columns.DeviceId).In(26,27).And
+                    //      (TRegList.Columns.Barcode).IsEqualTo(pBarcode).And(TRegList.Columns.Status).IsEqualTo(0).ExecuteDataSet();
+                    //     if (tempdsCI4100 != null)
+                    //    {
+                    //        var temptable = tempdsCI4100.Tables[0];
+                    //        if (temptable != null)
+                    //            result.AddRange(from DataRow row in temptable.Rows
+                    //                            select row[TRegList.Columns.AliasName].ToString());
+                    //        //var temptable2 = tempds.Tables[1];
+                    //        //if (temptable2 != null)
+                    //        //    pPatientName = (from DataRow row in temptable2.Rows
+                    //        //                    select row[LPatientInfo.Columns.PatientName].ToString()).FirstOrDefault()??"";
+                    //        //pPatientName = GetUnsignString(pPatientName);
+                    //    }
+                    //    // return result;
+                    // }
 
-                    if (tempds != null)
+                    // else if (deviceName.Trim() == "CI4100_KN")
+                    // {
+                    //     var tempdsCI4100_KN =
+                    //new Select("*").From(TRegList.Schema.Name).Where(TRegList.Columns.DeviceId).In(28, 29).And
+                    //    (TRegList.Columns.Barcode).IsEqualTo(pBarcode).And(TRegList.Columns.Status).IsEqualTo(0).ExecuteDataSet();
+                    //     if (tempdsCI4100_KN != null)
+                    //     {
+                    //         var temptable = tempdsCI4100_KN.Tables[0];
+                    //         if (temptable != null)
+                    //             result.AddRange(from DataRow row in temptable.Rows
+                    //                             select row[TRegList.Columns.AliasName].ToString());
+                    //         //var temptable2 = tempds.Tables[1];
+                    //         //if (temptable2 != null)
+                    //         //    pPatientName = (from DataRow row in temptable2.Rows
+                    //         //                    select row[LPatientInfo.Columns.PatientName].ToString()).FirstOrDefault()??"";
+                    //         //pPatientName = GetUnsignString(pPatientName);
+                    //     }
+                    //    // return result;
+                    // }
+                    // else if (deviceName.Trim() != "CI4100_KN" || deviceName.Trim() != "CI4100")
                     {
-                        DataTable temptable = tempds.Tables[0];
-                        if (temptable != null)
-                            result.AddRange(from DataRow row in temptable.Rows
-                                            select row[TRegList.Columns.AliasName].ToString());
-                        try
-                        {
-                            DataTable temptable2 = tempds.Tables[1];
-                            if (temptable2 != null)
-                                pPatientName = (from DataRow row in temptable2.Rows
-                                                select row[LPatientInfo.Columns.PatientName].ToString()).FirstOrDefault() ?? "";
-                            pPatientName = GetUnsignString(pPatientName);
-                        }
-                        catch (Exception)
-                        {
-                            pPatientName = "";
-                        }
-                    }
-                   // return result;
-                }
+                        //  var tempds =
+                        //new Select("*").From(TRegList.Schema.Name).Where(TRegList.Columns.DeviceId).IsEqualTo(pDeviceId).And
+                        //    (TRegList.Columns.Barcode).IsEqualTo(pBarcode).And(TRegList.Columns.Status).IsEqualTo(0).
+                        //    ExecuteDataSet();
 
+                        if (tempds != null)
+                        {
+                            DataTable temptable = tempds.Tables[0];
+                            if (temptable != null)
+                                result.AddRange(from DataRow row in temptable.Rows
+                                    select row[TRegList.Columns.AliasName].ToString());
+                            try
+                            {
+                                DataTable temptable2 = tempds.Tables[1];
+                                if (temptable2 != null)
+                                    pPatientName = (from DataRow row in temptable2.Rows
+                                        select row[LPatientInfo.Columns.PatientName].ToString()).FirstOrDefault() ?? "";
+                                pPatientName = GetUnsignString(pPatientName);
+                            }
+                            catch (Exception)
+                            {
+                                pPatientName = "";
+                            }
+                        }
+                        // return result;
+                    }
+                }
                 return result;
                 //Lấy ra tên bệnh nhân
 
