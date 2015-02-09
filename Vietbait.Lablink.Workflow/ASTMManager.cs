@@ -46,7 +46,7 @@ namespace Vietbait.Lablink.Workflow
                 _prvRequestArray = new Queue<List<string>>();
                 _currentOrder = new List<string>();
                 _failSending = 0;
-                _timeoutManager = new Timer(60000);
+                _timeoutManager = new Timer(8000);
                 _timeoutManager.Elapsed += _timeoutManager_Elapsed;
                 objService = new ExternalDataExchangeService();
 

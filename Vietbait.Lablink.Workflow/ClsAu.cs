@@ -10,6 +10,8 @@ namespace Vietbait.Lablink.Workflow
         public event EventHandler<ExternalDataEventArgs> GetQuery;
         public event EventHandler<ExternalDataEventArgs> GetACK;
         public event EventHandler<ExternalDataEventArgs> GetNAK;
+        public event EventHandler<ExternalDataEventArgs> CloseSession;
+        public event EventHandler<ExternalDataEventArgs> Timeout;
 
         /// <summary >
         /// Event to communicate the host the result.
@@ -76,6 +78,11 @@ namespace Vietbait.Lablink.Workflow
         {
             GetNAK(null, args);
             Console.WriteLine("Get NAK!");
+        }
+        public void CallCloseSession(ExternalDataEventArgs args)
+        {
+            CloseSession(null, args);
+            Console.WriteLine("Close Session!");
         }
     }
 }
